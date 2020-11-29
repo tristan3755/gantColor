@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#sect1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./ressources/images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#sect1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url(./ressources/images/splash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: screen;
+}
+
+#sect1 h1 {
+  position: absolute;
+  z-index: 5;
+  color: #e40d0d;
+  margin: 80px;
+  font-size: 40px;
+
+  font-family: "paint";
+  letter-spacing: 5px;
+}
+
+@font-face {
+  font-family: "paint";
+  src: url(./ressources/font/BLUE\ PAINT.otf);
+}
+
+/******************************************************sect2************************************************/
+
+#sect2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+#sect2 h1 {
+  font-family: "paint";
+  color: #e40d0d;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+  border-top: #e40d0d solid 1px;
+  border-bottom: #e40d0d solid 1px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+.contener{
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    min-height: 100vh;   
+}
+
+
+.cercle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 2s ease-in-out;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.cercle.cercle1{
+background-image: url(./ressources/images/peinture.jpg);
+clip-path: circle(100px at 25% center);
+}
+
+.cercle.cercle2{
+    background-image: url(./ressources/images/design.jpg);
+    clip-path: circle(100px at 50% center);
+    }
+
+    .cercle.cercle3{
+        background-image: url(./ressources/images/oeuvre.jpg);
+        clip-path: circle(100px at 75% center);
+        }
+
+
+.text,.text1,.text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: 4s;
+    width: 500px;
+    max-width: 80%;
+    min-height: 300px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    background-color: whitesmoke;
+    opacity: 0;
+    
+}
+
+.text p{
+    font-family: 'Raleway', sans-serif;   
+    font-weight: bold;
+}
+
+.text h2{
+    font-family: 'paint';  
+    letter-spacing: 5px; 
+    font-size: 25px;
+}
+
+.text1 p{
+    font-family: 'Raleway', sans-serif;   
+    font-weight: bold;
+}
+
+.text1 h2{
+    font-family: 'paint';  
+    letter-spacing: 5px; 
+    font-size: 25px;
+}
+
+.text2 p{
+    font-family: 'Raleway', sans-serif;   
+    font-weight: bold;
+}
+
+.text2 h2{
+    font-family: 'paint';  
+    letter-spacing: 5px; 
+    font-size: 25px;
+}
