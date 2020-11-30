@@ -71,3 +71,99 @@ function retourCercle3() {
   let monText = document.querySelector(".text2");
   monText.style.opacity = "0";
 }
+
+
+/*****************************************************************hover cercle**********************************************************/
+
+
+document.querySelector(".cercle1").addEventListener("mouseover", (event) => {
+  
+  hover1()
+
+});
+
+
+document.querySelector(".cercle1").addEventListener("mouseout", (event) => {
+  
+  deHover1()
+
+});
+
+function hover1(){
+
+
+  let monHover1=document.querySelector(".contener")
+  monHover1.style.backgroundColor="#FB8F08"
+  monHover1.style.transition="2s"
+  
+  
+
+}
+
+
+function deHover1(){
+
+
+  let monHover1=document.querySelector(".contener")
+  monHover1.style.backgroundColor="white"
+  
+  
+
+}
+
+
+
+
+
+
+document.querySelector(".cercle2").addEventListener("mouseover", (event) => {
+  
+  hover2()
+
+});
+
+
+document.querySelector(".cercle2").addEventListener("mouseout", (event) => {
+  
+  deHover1()
+
+});
+
+function hover2(){
+
+
+  let monHover1=document.querySelector(".contener")
+  monHover1.style.backgroundColor="#AC3731"
+  monHover1.style.transition="2s"
+  
+  
+
+}
+
+
+
+
+
+document.querySelector(".cercle3").addEventListener("mouseover", (event) => {
+  
+  hover3()
+
+});
+
+
+document.querySelector(".cercle3").addEventListener("mouseout", (event) => {
+  
+  deHover1()
+
+});
+
+function hover3(){
+
+
+  let monHover1=document.querySelector(".contener")
+  monHover1.style.backgroundColor="#3A4248"
+  monHover1.style.transition="2s"
+  
+  
+
+}
