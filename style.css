@@ -13,8 +13,8 @@ body {
   justify-content: flex-end;
   min-height: 100vh;
   width: 100%;
-  background-image: url(./ressources/images/bg2.jpg);
-  background-position:top;
+  background-image: url(./ressources/images/oeuvre.jpg);
+  background-position:center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
