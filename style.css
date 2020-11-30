@@ -99,9 +99,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
 .cercle.cercle1{
 background-image: url(./ressources/images/peinture.jpg);
 clip-path: circle(100px at 25% center);
