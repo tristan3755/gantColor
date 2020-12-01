@@ -132,8 +132,6 @@ setInterval(() => {
   setTimeout(img3,9000) 
 },9000 );
 
-
-
 })
 
 
