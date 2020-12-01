@@ -125,11 +125,15 @@ function hover3() {
 
 
 window.addEventListener('load',(event)=>{
+
 setInterval(() => {
   setTimeout(img1,3000)
   setTimeout(img2,6000)
   setTimeout(img3,9000) 
 },9000 );
+
+
+
 })
 
 
@@ -138,7 +142,7 @@ function img1(){
   monBg.style.backgroundImage="url(./ressources/images/carroussel/1.jpg)"
   monBg.style.backgroundSize="cover"
   monBg.style.backgroundPosition="center"
-  monBg.style.transition=' 2s ease-in-out'
+  monBg.style.transition=' 0.5s ease-in-out'
 }
 
 
@@ -147,7 +151,7 @@ function img2(){
   monBg.style.backgroundImage="url(./ressources/images/carroussel/2.jpg)"
   monBg.style.backgroundSize="cover"
   monBg.style.backgroundPosition="center"
-  monBg.style.transition=' 2s ease-in-out'
+  monBg.style.transition=' 0.5s ease-in-out'
 }
 
 function img3(){
@@ -155,5 +159,5 @@ function img3(){
   monBg.style.backgroundImage="url(./ressources/images/carroussel/3.jpg)"
   monBg.style.backgroundSize="cover"
   monBg.style.backgroundPosition="center"
-  monBg.style.transition=' 2s ease-in-out'
+  monBg.style.transition=' 0.5s ease-in-out'
 }
