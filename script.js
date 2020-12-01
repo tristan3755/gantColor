@@ -120,3 +120,40 @@ function hover3() {
   monHover1.style.backgroundColor = "#3A4248";
   monHover1.style.transition = "2s";
 }
+
+/***********************************************************carroussel ************************************************************/
+
+
+window.addEventListener('load',(event)=>{
+setInterval(() => {
+  setTimeout(img1,3000)
+  setTimeout(img2,6000)
+  setTimeout(img3,9000) 
+},9000 );
+})
+
+
+function img1(){
+  let monBg=document.getElementById('sect3')
+  monBg.style.backgroundImage="url(./ressources/images/carroussel/1.jpg)"
+  monBg.style.backgroundSize="cover"
+  monBg.style.backgroundPosition="center"
+  monBg.style.transition=' 2s ease-in-out'
+}
+
+
+function img2(){
+  let monBg=document.getElementById('sect3')
+  monBg.style.backgroundImage="url(./ressources/images/carroussel/2.jpg)"
+  monBg.style.backgroundSize="cover"
+  monBg.style.backgroundPosition="center"
+  monBg.style.transition=' 2s ease-in-out'
+}
+
+function img3(){
+  let monBg=document.getElementById('sect3')
+  monBg.style.backgroundImage="url(./ressources/images/carroussel/3.jpg)"
+  monBg.style.backgroundSize="cover"
+  monBg.style.backgroundPosition="center"
+  monBg.style.transition=' 2s ease-in-out'
+}

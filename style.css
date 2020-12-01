@@ -165,3 +165,34 @@ clip-path: circle(100px at 25% center);
     letter-spacing: 5px; 
     font-size: 25px;
 }
+
+/******************************************************sect3************************************************/
+
+#sect3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 100vh;
+  width: 100%;
+  
+
+}
+
+#sect3>* {
+
+  font-size: 80px;
+  
+}
+
+#sect3 h1{
+width: 400px;
+margin-left: 50px;
+font-size: 60px;
+color: white;
+text-shadow: black 5px 5px 5px;
+}
+
+
+/******************************************************formulaire************************************************/
+
