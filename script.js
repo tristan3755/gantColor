@@ -122,7 +122,7 @@ function hover3() {
 }
 
 /***********************************************************carroussel ************************************************************/
-
+/*
 
 window.addEventListener('load',(event)=>{
 
@@ -158,4 +158,51 @@ function img3(){
   monBg.style.backgroundSize="cover"
   monBg.style.backgroundPosition="center"
   monBg.style.transition=' 0.5s ease-in-out'
+}*/
+
+
+let mesImages=[
+
+  {
+    image:'./ressources/images/carroussel/1.jpg'
+  },
+
+  {
+    image:'./ressources/images/carroussel/2.jpg'
+  },
+  {
+    image:'./ressources/images/carroussel/3.jpg'
+  },
+  {
+    image:'./ressources/images/carroussel/4.jpg'
+  },
+  {
+    image:'./ressources/images/carroussel/5.jpg'
+  },
+  {
+    image:'./ressources/images/carroussel/6.jpg'
+  },
+  {
+    image:'./ressources/images/carroussel/7.jpg'
+  },
+  {
+    image:'./ressources/images/carroussel/8.jpg'
+  },
+  {
+    image:'./ressources/images/carroussel/9.jpg'
+  },
+
+
+]
+
+for(i in mesImages){
+  let monBloc=document.createElement('img')
+ monBloc.src=mesImages[i].image
+ monBloc.style.width="400px"
+ monBloc.style.maxWidth="80%"
+monBloc.style.height="400px"
+monBloc.style.margin="20px"
+
+document.getElementById('sect3').appendChild(monBloc)
+
 }

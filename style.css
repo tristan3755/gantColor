@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   width: 100%;
   background-image: url(./ressources/images/oeuvre.jpg);
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -43,8 +43,6 @@ body {
   max-width: 80%;
   height: auto;
   filter: grayscale(30%);
-
-  
 }
 
 @font-face {
@@ -60,7 +58,6 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-
 }
 
 #sect2 h1 {
@@ -76,161 +73,152 @@ body {
   margin-bottom: 0;
 }
 
-.contener{
-    position: relative;
-    margin-top: 0;
-    width: 100%;
-    min-height: 100vh;   
+.contener {
+  position: relative;
+  margin-top: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
-
-.cercle{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: 2s ease-in-out;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
+.cercle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 2s ease-in-out;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
 }
 
-.cercle.cercle1{
-background-image: url(./ressources/images/peinture.jpg);
-clip-path: circle(100px at 25% center);
+.cercle.cercle1 {
+  background-image: url(./ressources/images/peinture.jpg);
+  clip-path: circle(100px at 25% center);
 }
 
-.cercle.cercle2{
-    background-image: url(./ressources/images/design.jpg);
-    clip-path: circle(100px at 50% center);
-    }
-
-    .cercle.cercle3{
-        background-image: url(./ressources/images/oeuvre.jpg);
-        clip-path: circle(100px at 75% center);
-        }
-
-
-.text,.text1,.text2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    transition: 4s;
-    width: 500px;
-    max-width: 80%;
-    min-height: 300px;
-    color: black;
-    font-size: 15px;
-    text-align: center;
-    background-color: whitesmoke;
-    opacity: 0;
-    
+.cercle.cercle2 {
+  background-image: url(./ressources/images/design.jpg);
+  clip-path: circle(100px at 50% center);
 }
 
-.text p{
-    font-family: 'Raleway', sans-serif;   
-    font-weight: bold;
+.cercle.cercle3 {
+  background-image: url(./ressources/images/oeuvre.jpg);
+  clip-path: circle(100px at 75% center);
 }
 
-.text h2{
-    font-family: 'paint';  
-    letter-spacing: 5px; 
-    font-size: 25px;
+.text,
+.text1,
+.text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 4s;
+  width: 500px;
+  max-width: 80%;
+  min-height: 300px;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  background-color: whitesmoke;
+  opacity: 0;
 }
 
-.text1 p{
-    font-family: 'Raleway', sans-serif;   
-    font-weight: bold;
+.text p {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
-.text1 h2{
-    font-family: 'paint';  
-    letter-spacing: 5px; 
-    font-size: 25px;
+.text h2 {
+  font-family: "paint";
+  letter-spacing: 5px;
+  font-size: 25px;
 }
 
-.text2 p{
-    font-family: 'Raleway', sans-serif;   
-    font-weight: bold;
+.text1 p {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
-.text2 h2{
-    font-family: 'paint';  
-    letter-spacing: 5px; 
-    font-size: 25px;
+.text1 h2 {
+  font-family: "paint";
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
+.text2 p {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.text2 h2 {
+  font-family: "paint";
+  letter-spacing: 5px;
+  font-size: 25px;
 }
 
 /******************************************************sect3************************************************/
 
 #sect3 {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
-  
-
+  background-color: white;
 }
 
-#sect3 h1{
-width: 500px;
-margin-left: 50px;
-font-size: 50px;
-color: white;
-text-shadow: black 5px 5px 5px;
-font-family: 'Raleway', sans-serif;   
+#sect3 h1 {
+  font-family: "paint";
+  color: #e40d0d;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+  border-top: #e40d0d solid 1px;
+  border-bottom: #e40d0d solid 1px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 100px;
+  margin-top: 0;
 }
-
 
 /******************************************************formulaire************************************************/
 
-#sect4{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100vh;
-}
-
-.image,.formulaire{
-  height: 100vh;
-  width: 50%;
-}
-
-.image{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  background-image: url(./ressources/images/contact.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.image h1{
-  width: 500px;
-margin-left: 50px;
-font-size: 50px;
-color: white;
-text-shadow: black 5px 5px 5px;
-font-family: 'Raleway', sans-serif;  
-}
-
-.formulaire{
+#sect4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
-.formulaire form{
-  height: 70vh;
+#sect4 h1 {
+  font-family: "paint";
+  color: #e40d0d;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+  border-top: #e40d0d solid 1px;
+  border-bottom: #e40d0d solid 1px;
   width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+  justify-self: flex-end;
 }
+
+form{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+height: 80vh;
+}
+
