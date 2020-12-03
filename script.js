@@ -122,42 +122,54 @@ function hover3() {
 }
 
 /***********************************************************carroussel ************************************************************/
-
+/*
 let mesImages=[
 
   {
-    image:'./ressources/images/carroussel/1.jpg'
+    image:'./ressources/images/carroussel/1.jpg',
+    text:""
   },
 
   {
-    image:'./ressources/images/carroussel/2.jpg'
+    image:'./ressources/images/carroussel/2.jpg',
+    text:""
   },
   {
-    image:'./ressources/images/carroussel/3.jpg'
+    image:'./ressources/images/carroussel/3.jpg',
+    text:""
   },
   {
-    image:'./ressources/images/carroussel/4.jpg'
+    image:'./ressources/images/carroussel/4.jpg',
+    text:""
   },
   {
-    image:'./ressources/images/carroussel/5.jpg'
+    image:'./ressources/images/carroussel/5.jpg',
+    text:""
   },
   {
-    image:'./ressources/images/carroussel/6.jpg'
+    image:'./ressources/images/carroussel/6.jpg',
+    text:""
   },
   {
-    image:'./ressources/images/carroussel/7.jpg'
+    image:'./ressources/images/carroussel/7.jpg',
+    text:""
   },
   {
-    image:'./ressources/images/carroussel/8.jpg'
+    image:'./ressources/images/carroussel/8.jpg',
+    text:""
   },
   {
-    image:'./ressources/images/carroussel/9.jpg'
+    image:'./ressources/images/carroussel/9.jpg',
+    text:""
   },
 
 
 ]
 
 for(i in mesImages){
+
+  
+  
   let monBloc=document.createElement('img')
  monBloc.src=mesImages[i].image
  monBloc.style.width="400px"
@@ -165,6 +177,198 @@ for(i in mesImages){
 monBloc.style.height="400px"
 monBloc.style.margin="20px"
 
+let monBlocText=document.createElement('div')
+
+monBlocText.style.width="400px"
+monBlocText.style.maxWidth="80%"
+monBlocText.style.height="400px"
+monBlocText.style.margin="20px"
+monBlocText.style.backgroundColor="black"
+monBlocText.style.zIndex="30"
+
+monBloc.appendChild(monBlocText)
+
 document.getElementById('sect3').appendChild(monBloc)
 
 }
+
+*/
+
+
+document.querySelector(".img1").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover1")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img1").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover1")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+
+document.querySelector(".img2").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover2")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img2").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover2")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+
+document.querySelector(".img3").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover3")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img3").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover3")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+document.querySelector(".img4").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover4")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img4").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover4")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+
+document.querySelector(".img5").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover5")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img5").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover5")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+document.querySelector(".img6").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover6")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img6").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover6")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+
+document.querySelector(".img7").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover7")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img7").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover7")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+
+document.querySelector(".img8").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover8")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img8").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover8")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
+
+document.querySelector(".img9").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hover9")
+  monHover.style.width="100%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0.8"
+
+
+})
+
+document.querySelector(".img9").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hover9")
+  monHover.style.width="0%"
+  monHover.style.height="100%"
+  monHover.style.opacity="0"
+
+
+})
