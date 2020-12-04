@@ -58,20 +58,21 @@ body {
   align-items: center;
   min-height: 150vh;
   width: 100%;
+
 }
 
 #sect2 h1 {
   font-family: "paint";
-  color: #e40d0d;
+  color:#e4d2c4;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
-  border-top: #e40d0d solid 1px;
-  border-bottom: #e40d0d solid 1px;
+  border-top: #e4d2c4  solid 1px;
+  border-bottom: #e4d2c4 solid 1px;
   width: 100%;
   padding: 30px;
   margin-bottom: 0;
-}
+}  
 
 .contener {
   position: relative;
@@ -176,12 +177,12 @@ body {
 
 #sect3 h1 {
   font-family: "paint";
-  color: #e40d0d;
+  color: #e4d2c4;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
-  border-top: #e40d0d solid 1px;
-  border-bottom: #e40d0d solid 1px;
+  border-top: #e4d2c4 solid 1px;
+  border-bottom: #e4d2c4 solid 1px;
   width: 100%;
   padding: 30px;
   margin-top: 0;
@@ -214,10 +215,10 @@ body {
   position: relative;
   height: 100%;
   width: 0%;
-  background-color: #fe7125;
+  background-color: #e4d2c4;
   opacity: 0;
-   transition: 2s ease-in-out; 
- 
+  transition: 2s ease-in-out;
+
 }
 
 .img1 {
@@ -225,41 +226,49 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .img2 {
   background-image: url(./ressources/images/carroussel/2.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .img3 {
   background-image: url(./ressources/images/carroussel/3.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .img4 {
   background-image: url(./ressources/images/carroussel/4.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .img5 {
   background-image: url(./ressources/images/carroussel/5.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .img6 {
   background-image: url(./ressources/images/carroussel/6.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .img7 {
   background-image: url(./ressources/images/carroussel/7.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .img8 {
   background-image: url(./ressources/images/carroussel/8.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .img9 {
   background-image: url(./ressources/images/carroussel/9.jpg);
   background-position: center;
@@ -275,6 +284,7 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
+  
 }
 
 .contact {
@@ -314,41 +324,35 @@ form {
   align-items: center;
   width: 100%;
   min-height: 120vh;
-  
-
-
 }
 
-.input input{
+.input input {
   margin-bottom: 20px;
 }
 
-.saisie > * {
+.saisie>* {
   width: 70%;
   height: 50px;
   border-radius: 5px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   min-width: 300px;
- 
-  
- 
 }
 
-.textarea{
+.textarea {
   width: 50%;
-  height:400px;
+  height: 400px;
   min-width: 300px;
 }
 
 textarea {
   resize: none;
-  width: 90%;
+  width: 100%;
   height: 100%;
   border-radius: 5px;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  
+  margin: auto;
 }
 
 .saisie {
@@ -358,129 +362,95 @@ textarea {
   justify-content: center;
   width: 40%;
   height: 100vh;
-  
 }
 
 
-.bouton{
+.bouton {
   position: relative;
   background-color: whitesmoke;
   width: 250px;
   height: 80px;
   border: none;
   font-size: 25px;
-  letter-spacing: 5px; 
-  color: #fe7125;
+  letter-spacing: 5px;
+  color: #e4d2c4;
+  margin: 20px;
 }
 
 
-.bouton span{
-
+.bouton span {
   position: absolute;
-  background-color: #fe7125;
-
-
+  background-color: #e4d2c4;
 }
 
-.bouton span:nth-child(1){
-
-  
+.bouton span:nth-child(1) {
   left: 0;
   bottom: 0;
   width: 2px;
   height: 100%;
- transform:scaleY(0);
- transform-origin: bottom;
- transition:transform 0.25s;
-
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.25s;
 }
 
-.bouton:hover span:nth-child(1){
-
-  
-
- transform:scaleY(1);
- transform-origin: bottom;
- transition:transform 0.25s;
-
+.bouton:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.25s;
 }
 
-.bouton span:nth-child(2){
-
-  
+.bouton span:nth-child(2) {
   left: 0;
   top: 0;
   width: 100%;
   height: 2px;
- transform:scaleX(0);
- transform-origin: left;
- transition:transform 0.5s;
-
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
 }
 
-.bouton:hover span:nth-child(2){
-
-  
-
- transform:scaleX(1);
- transform-origin: left;
- transition:transform 0.25s;
-
+.bouton:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.25s;
 }
 
-.bouton span:nth-child(3){
-
-  
+.bouton span:nth-child(3) {
   right: 0;
   top: 0;
   width: 2px;
   height: 100%;
- transform:scaleY(0);
- transform-origin: top;
- transition:transform 0.25s;
-
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.25s;
 }
 
-.bouton:hover span:nth-child(3){
-
-  
-
- transform:scaleY(1);
- transform-origin: top;
- transition:transform 0.25s;
-
+.bouton:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.25s;
 }
 
 
-.bouton span:nth-child(4){
-
-  
+.bouton span:nth-child(4) {
   right: 0;
   bottom: 0;
   width: 100%;
   height: 2px;
- transform:scaleX(0);
- transform-origin: right;
- transition:transform 0.25s;
-
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s;
 }
 
-.bouton:hover span:nth-child(4){
-
-  
-
- transform:scaleX(1);
- transform-origin: right;
- transition:transform 0.25s;
-
+.bouton:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.25s;
 }
 
-
-.bouton:hover{
-  background-color: #fe7125;
+.bouton:hover {
+  background-color: #e4d2c4;
   color: white;
   transition: 1s ease-in-out;
   cursor: pointer;
 }
-
-
