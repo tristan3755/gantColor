@@ -122,77 +122,7 @@ function hover3() {
 }
 
 /***********************************************************carroussel ************************************************************/
-/*
-let mesImages=[
 
-  {
-    image:'./ressources/images/carroussel/1.jpg',
-    text:""
-  },
-
-  {
-    image:'./ressources/images/carroussel/2.jpg',
-    text:""
-  },
-  {
-    image:'./ressources/images/carroussel/3.jpg',
-    text:""
-  },
-  {
-    image:'./ressources/images/carroussel/4.jpg',
-    text:""
-  },
-  {
-    image:'./ressources/images/carroussel/5.jpg',
-    text:""
-  },
-  {
-    image:'./ressources/images/carroussel/6.jpg',
-    text:""
-  },
-  {
-    image:'./ressources/images/carroussel/7.jpg',
-    text:""
-  },
-  {
-    image:'./ressources/images/carroussel/8.jpg',
-    text:""
-  },
-  {
-    image:'./ressources/images/carroussel/9.jpg',
-    text:""
-  },
-
-
-]
-
-for(i in mesImages){
-
-  
-  
-  let monBloc=document.createElement('img')
- monBloc.src=mesImages[i].image
- monBloc.style.width="400px"
- monBloc.style.maxWidth="80%"
-monBloc.style.height="400px"
-monBloc.style.margin="20px"
-
-let monBlocText=document.createElement('div')
-
-monBlocText.style.width="400px"
-monBlocText.style.maxWidth="80%"
-monBlocText.style.height="400px"
-monBlocText.style.margin="20px"
-monBlocText.style.backgroundColor="black"
-monBlocText.style.zIndex="30"
-
-monBloc.appendChild(monBlocText)
-
-document.getElementById('sect3').appendChild(monBloc)
-
-}
-
-*/
 
 
 document.querySelector(".img1").addEventListener('mouseover',(event)=>{
@@ -359,6 +289,7 @@ document.querySelector(".img9").addEventListener('mouseover',(event)=>{
   monHover.style.width="100%"
   monHover.style.height="100%"
   monHover.style.opacity="0.8"
+  
 
 
 })

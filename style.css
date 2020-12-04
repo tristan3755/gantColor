@@ -172,7 +172,6 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: white;
- 
 }
 
 #sect3 h1 {
@@ -185,73 +184,87 @@ body {
   border-bottom: #e40d0d solid 1px;
   width: 100%;
   padding: 30px;
- margin-top: 0;
+  margin-top: 0;
 }
 
-.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9{
-width: 400px;
-max-width:80%;
- height:400px;
- margin:20px;
- 
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9 {
+  width: 400px;
+  max-width: 80%;
+  height: 400px;
+  margin: 20px;
 }
 
-.hover1,.hover2,.hover3,.hover4,.hover5,.hover6,.hover7,.hover8,.hover9{
+.hover1,
+.hover2,
+.hover3,
+.hover4,
+.hover5,
+.hover6,
+.hover7,
+.hover8,
+.hover9 {
   position: relative;
   height: 100%;
   width: 0%;
-  background-color: #FE7125;
+  background-color: #fe7125;
   opacity: 0;
-  transition: 2s ease-in-out;
+   transition: 2s ease-in-out; 
+ 
 }
 
-.img1{
+.img1 {
   background-image: url(./ressources/images/carroussel/1.jpg);
   background-position: center;
   background-size: cover;
 }
-.img2{
+.img2 {
   background-image: url(./ressources/images/carroussel/2.jpg);
   background-position: center;
   background-size: cover;
 }
-.img3{
+.img3 {
   background-image: url(./ressources/images/carroussel/3.jpg);
   background-position: center;
   background-size: cover;
 }
-.img4{
+.img4 {
   background-image: url(./ressources/images/carroussel/4.jpg);
   background-position: center;
   background-size: cover;
 }
-.img5{
+.img5 {
   background-image: url(./ressources/images/carroussel/5.jpg);
   background-position: center;
   background-size: cover;
 }
-.img6{
+.img6 {
   background-image: url(./ressources/images/carroussel/6.jpg);
   background-position: center;
   background-size: cover;
 }
-.img7{
+.img7 {
   background-image: url(./ressources/images/carroussel/7.jpg);
   background-position: center;
   background-size: cover;
 }
-.img8{
+.img8 {
   background-image: url(./ressources/images/carroussel/8.jpg);
   background-position: center;
   background-size: cover;
 }
-.img9{
+.img9 {
   background-image: url(./ressources/images/carroussel/9.jpg);
   background-position: center;
   background-size: cover;
 }
-
-
 
 /******************************************************formulaire************************************************/
 
@@ -262,11 +275,9 @@ max-width:80%;
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-
 }
 
-.contact{
-  
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -274,46 +285,39 @@ max-width:80%;
   height: 80vh;
   width: 100%;
   background-image: url(./ressources/images/contact.jpg);
-background-size: cover;
-background-position:right;
-  
+  background-size: cover;
+  background-position: right;
 }
 
-.contact h1{
+.contact h1 {
   font-family: "paint";
- color: white;
+  color: white;
   font-size: 40px;
   letter-spacing: 5px;
- 
 }
 
-form{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-width: 100%;
-min-height: 100vh;
-background-attachment: fixed;
-
-
-}
-
-.input{
+form {
   display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-evenly;
-align-items: center;
-width: 100%;
-height: 100vh;
-
-
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
+.input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
 
-.saisie>*{
-  width: 300px;
+.saisie > * {
+  width: 100%;
   height: 50px;
   border-radius: 10px;
   text-align: center;
@@ -322,7 +326,7 @@ height: 100vh;
   margin: 20px;
 }
 
- textarea{
+textarea {
   resize: none;
   width: 300px;
   height: 300px;
@@ -332,14 +336,133 @@ height: 100vh;
   opacity: 0.8;
 }
 
-.saisie{
+.saisie {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 40%;
   height: 100vh;
-  
 }
 
 
+.bouton{
+  position: relative;
+  background-color: whitesmoke;
+  width: 250px;
+  height: 80px;
+  border: none;
+  font-size: 25px;
+  letter-spacing: 5px; 
+  color: #fe7125;
+}
+
+
+.bouton span{
+
+  position: absolute;
+  background-color: #fe7125;
+
+
+}
+
+.bouton span:nth-child(1){
+
+  
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+ transform:scaleY(0);
+ transform-origin: bottom;
+ transition:transform 0.25s;
+
+}
+
+.bouton:hover span:nth-child(1){
+
+  
+
+ transform:scaleY(1);
+ transform-origin: bottom;
+ transition:transform 0.25s;
+
+}
+
+.bouton span:nth-child(2){
+
+  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+ transform:scaleX(0);
+ transform-origin: left;
+ transition:transform 0.5s;
+
+}
+
+.bouton:hover span:nth-child(2){
+
+  
+
+ transform:scaleX(1);
+ transform-origin: left;
+ transition:transform 0.25s;
+
+}
+
+.bouton span:nth-child(3){
+
+  
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+ transform:scaleY(0);
+ transform-origin: top;
+ transition:transform 0.25s;
+
+}
+
+.bouton:hover span:nth-child(3){
+
+  
+
+ transform:scaleY(1);
+ transform-origin: top;
+ transition:transform 0.25s;
+
+}
+
+
+.bouton span:nth-child(4){
+
+  
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+ transform:scaleX(0);
+ transform-origin: right;
+ transition:transform 0.25s;
+
+}
+
+.bouton:hover span:nth-child(4){
+
+  
+
+ transform:scaleX(1);
+ transform-origin: right;
+ transition:transform 0.25s;
+
+}
+
+
+.bouton:hover{
+  background-color: #fe7125;
+  color: white;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
