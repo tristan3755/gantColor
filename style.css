@@ -346,6 +346,7 @@ form {
 
 .input input {
   margin-bottom: 20px;
+  border: #e4d2c4 3px solid;
 }
 
 .saisie>* {
@@ -371,6 +372,7 @@ textarea {
   text-align: center;
   font-family: "Raleway", sans-serif;
   margin: auto;
+  border: #e4d2c4 3px solid;
 }
 
 .saisie {
