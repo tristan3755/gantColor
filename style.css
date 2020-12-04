@@ -58,7 +58,6 @@ body {
   align-items: center;
   min-height: 150vh;
   width: 100%;
-
 }
 
 #sect2 h1 {
@@ -79,6 +78,7 @@ body {
   margin-top: 0;
   width: 100%;
   min-height: 150vh;
+
 }
 
 .cercle {
@@ -94,26 +94,33 @@ body {
   background-position: center;
   background-size: cover;
   cursor: pointer;
+ 
 }
 
 .cercle.cercle1 {
   background-image: url(./ressources/images/peinture.jpg);
-  clip-path: circle(100px at 25% center);
+  clip-path: circle(100px at 20% center);
 }
 
 .cercle.cercle2 {
-  background-image: url(./ressources/images/design.jpg);
-  clip-path: circle(100px at 50% center);
+  background-image: url(./ressources/images/floor.jpg);
+  clip-path: circle(100px at 40% center);
 }
 
 .cercle.cercle3 {
   background-image: url(./ressources/images/oeuvre.jpg);
-  clip-path: circle(100px at 75% center);
+  clip-path: circle(100px at 60% center);
+}
+
+.cercle.cercle4 {
+  background-image: url(./ressources/images/façade.jpg);
+  clip-path: circle(100px at 80% center);
 }
 
 .text,
 .text1,
-.text2 {
+.text2,
+.text3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,6 +165,17 @@ body {
 }
 
 .text2 h2 {
+  font-family: "paint";
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
+.text3 p {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.text3 h2 {
   font-family: "paint";
   letter-spacing: 5px;
   font-size: 25px;

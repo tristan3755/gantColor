@@ -17,7 +17,7 @@ function cercle() {
 
 function retourCercle() {
   let monCercle = document.querySelector(".cercle1");
-  monCercle.style.clipPath = "circle(100px at 25% center)";
+  monCercle.style.clipPath = "circle(100px at 20% center)";
   monCercle.style.zIndex = "0";
 
   let monText = document.querySelector(".text");
@@ -42,7 +42,7 @@ function cercle2() {
 
 function retourCercle2() {
   let monCercle = document.querySelector(".cercle2");
-  monCercle.style.clipPath = "circle(100px at 50% center)";
+  monCercle.style.clipPath = "circle(100px at 40% center)";
   monCercle.style.zIndex = "0";
   let monText = document.querySelector(".text1");
   monText.style.opacity = "0";
@@ -66,11 +66,38 @@ function cercle3() {
 
 function retourCercle3() {
   let monCercle = document.querySelector(".cercle3");
-  monCercle.style.clipPath = "circle(100px at 75% center)";
+  monCercle.style.clipPath = "circle(100px at 60% center)";
   monCercle.style.zIndex = "0";
   let monText = document.querySelector(".text2");
   monText.style.opacity = "0";
 }
+
+
+
+document.querySelector(".cercle4").addEventListener("click", (event) => {
+  cercle4();
+});
+
+window.addEventListener("scroll", (event) => {
+  retourCercle4();
+});
+
+function cercle4() {
+  let monCercle = document.querySelector(".cercle4");
+  monCercle.style.clipPath = "circle(100% at center)";
+  monCercle.style.zIndex = "10";
+  let monText = document.querySelector(".text3");
+  monText.style.opacity = "0.7";
+}
+
+function retourCercle4() {
+  let monCercle = document.querySelector(".cercle4");
+  monCercle.style.clipPath = "circle(100px at 80% center)";
+  monCercle.style.zIndex = "0";
+  let monText = document.querySelector(".text3");
+  monText.style.opacity = "0";
+}
+
 
 /*****************************************************************hover cercle**********************************************************/
 
@@ -103,7 +130,7 @@ document.querySelector(".cercle2").addEventListener("mouseout", (event) => {
 
 function hover2() {
   let monHover1 = document.querySelector(".contener");
-  monHover1.style.backgroundColor = "#AC3731";
+  monHover1.style.backgroundColor = "#939393";
   monHover1.style.transition = "2s";
 }
 
@@ -120,6 +147,22 @@ function hover3() {
   monHover1.style.backgroundColor = "#3A4248";
   monHover1.style.transition = "2s";
 }
+
+
+document.querySelector(".cercle4").addEventListener("mouseover", (event) => {
+  hover4();
+});
+
+document.querySelector(".cercle4").addEventListener("mouseout", (event) => {
+  deHover1();
+});
+
+function hover4() {
+  let monHover1 = document.querySelector(".contener");
+  monHover1.style.backgroundColor = "#FB8F08";
+  monHover1.style.transition = "2s";
+}
+
 
 /***********************************************************carroussel ************************************************************/
 
