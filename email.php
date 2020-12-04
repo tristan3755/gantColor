@@ -7,4 +7,3 @@ $mess = ''.$_POST['prenom'].' '.$_POST['nom'].' '.$_POST['objet'].' '.$_POST['ma
 $mail = mail('tristan3755@gmail.com','Envoi depuis la page Contact',$mess);
 
 ?>
-
