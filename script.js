@@ -72,8 +72,6 @@ function retourCercle3() {
   monText.style.opacity = "0";
 }
 
-
-
 document.querySelector(".cercle4").addEventListener("click", (event) => {
   cercle4();
 });
@@ -97,7 +95,6 @@ function retourCercle4() {
   let monText = document.querySelector(".text3");
   monText.style.opacity = "0";
 }
-
 
 /*****************************************************************hover cercle**********************************************************/
 
@@ -148,7 +145,6 @@ function hover3() {
   monHover1.style.transition = "2s";
 }
 
-
 document.querySelector(".cercle4").addEventListener("mouseover", (event) => {
   hover4();
 });
@@ -163,263 +159,193 @@ function hover4() {
   monHover1.style.transition = "2s";
 }
 
-
 /***********************************************************carroussel ************************************************************/
 
-
-
-document.querySelector(".img1").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover1")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img1").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover1")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-
-document.querySelector(".img2").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover2")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img2").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover2")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-
-document.querySelector(".img3").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover3")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img3").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover3")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-document.querySelector(".img4").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover4")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img4").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover4")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-
-document.querySelector(".img5").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover5")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img5").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover5")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-document.querySelector(".img6").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover6")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img6").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover6")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-
-document.querySelector(".img7").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover7")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img7").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover7")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-
-document.querySelector(".img8").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover8")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-
-
-})
-
-document.querySelector(".img8").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover8")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-
-document.querySelector(".img9").addEventListener('mouseover',(event)=>{
-
-  let monHover=document.querySelector(".hover9")
-  monHover.style.width="100%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0.8"
-  
-
-
-})
-
-document.querySelector(".img9").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hover9")
-  monHover.style.width="0%"
-  monHover.style.height="100%"
-  monHover.style.opacity="0"
-
-
-})
-
+document.querySelector(".img1").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover1");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img1").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover1");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+
+document.querySelector(".img2").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover2");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img2").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover2");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+
+document.querySelector(".img3").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover3");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img3").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover3");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+document.querySelector(".img4").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover4");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img4").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover4");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+
+document.querySelector(".img5").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover5");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img5").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover5");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+document.querySelector(".img6").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover6");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img6").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover6");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+
+document.querySelector(".img7").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover7");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img7").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover7");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+
+document.querySelector(".img8").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover8");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img8").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover8");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
+
+document.querySelector(".img9").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hover9");
+  monHover.style.width = "100%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0.8";
+});
+
+document.querySelector(".img9").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hover9");
+  monHover.style.width = "0%";
+  monHover.style.height = "100%";
+  monHover.style.opacity = "0";
+});
 
 ////////////////////////////////////////////////qualité/////////////////////////////////////////////////////////////////
 
-document.querySelector(".n1").addEventListener('mouseover',(event)=>{
+document.querySelector(".n1").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hoverQ");
+  monHover.style.width = "100%";
+  monHover.style.opacity = "1";
 
-  let monHover=document.querySelector(".hoverQ")
-  monHover.style.width="100%"
-  monHover.style.opacity="1"
+  let disparait = document.querySelector(".n2");
+  disparait.style.opacity = "0";
 
-  let disparait=document.querySelector(".n2")
-  disparait.style.opacity="0"
+  let bg = document.querySelector(".engagement");
+  bg.style.backgroundImage = "url(./ressources/images/client.jpg)";
+  bg.style.transition = "4s ease";
+  bg.style.backgroundSize = "cover";
+  bg.style.backgroundPosition = "center";
+  bg.style.backgroundRepeat = "no-repeat";
+});
 
-  let bg=document.querySelector(".engagement")
-  bg.style.backgroundImage="url(./ressources/images/client.jpg)"
-  bg.style.transition="4s ease"
-  bg.style.backgroundSize="cover"
-  bg.style.backgroundPosition="center"
-  bg.style.backgroundRepeat="no-repeat"
-  
+document.querySelector(".n1").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hoverQ");
+  monHover.style.width = "0";
+  monHover.style.opacity = "0";
 
+  let disparait = document.querySelector(".n2");
+  disparait.style.opacity = "1";
 
-})
+  let titre = document.querySelector(".hoverTitre");
+  titre.style.opacity = "1";
 
-document.querySelector(".n1").addEventListener('mouseout',(event)=>{
+  let bg = document.querySelector(".engagement");
 
-  let monHover=document.querySelector(".hoverQ")
-  monHover.style.width="0"
-  monHover.style.opacity="0"
+  bg.style.backgroundImage = "";
+  bg.style.transition = "4s ease";
+});
 
-  let disparait=document.querySelector(".n2")
-  disparait.style.opacity="1"
+document.querySelector(".n2").addEventListener("mouseover", (event) => {
+  let monHover = document.querySelector(".hoverQ1");
+  monHover.style.width = "100%";
+  monHover.style.opacity = "1";
 
-  let titre=document.querySelector(".hoverTitre")
-  titre.style.opacity="1"
+  let disparait = document.querySelector(".n1");
+  disparait.style.opacity = "0";
 
-  let bg=document.querySelector(".engagement")
-  
-  bg.style.backgroundImage=""
-  bg.style.transition="4s ease"
+  let bg = document.querySelector(".engagement");
+  bg.style.backgroundImage = "url(./ressources/images/outils.jpg)";
+  bg.style.transition = "4s ease";
+  bg.style.backgroundSize = "cover";
+  bg.style.backgroundPosition = "center";
+  bg.style.backgroundRepeat = "no-repeat";
+});
 
-})
+document.querySelector(".n2").addEventListener("mouseout", (event) => {
+  let monHover = document.querySelector(".hoverQ1");
+  monHover.style.width = "0";
+  monHover.style.opacity = "0";
 
-document.querySelector(".n2").addEventListener('mouseover',(event)=>{
+  let disparait = document.querySelector(".n1");
+  disparait.style.opacity = "1";
 
-  let monHover=document.querySelector(".hoverQ1")
-  monHover.style.width="100%"
-  monHover.style.opacity="1"
+  let bg = document.querySelector(".engagement");
 
-  let disparait=document.querySelector(".n1")
-  disparait.style.opacity="0"
-  
-  let bg=document.querySelector(".engagement")
-  bg.style.backgroundImage="url(./ressources/images/outils.jpg)"
-  bg.style.transition="4s ease"
-  bg.style.backgroundSize="cover"
-  bg.style.backgroundPosition="center"
-  bg.style.backgroundRepeat="no-repeat"
-
-
-})
-
-document.querySelector(".n2").addEventListener('mouseout',(event)=>{
-
-  let monHover=document.querySelector(".hoverQ1")
-  monHover.style.width="0"
-  monHover.style.opacity="0"
-
-  let disparait=document.querySelector(".n1")
-  disparait.style.opacity="1"
-
-  let bg=document.querySelector(".engagement")
-  
-  bg.style.backgroundImage=""
-  bg.style.transition="4s ease"
-
-})
+  bg.style.backgroundImage = "";
+  bg.style.transition = "4s ease";
+});

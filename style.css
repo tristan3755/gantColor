@@ -38,7 +38,7 @@ body {
   position: absolute;
   z-index: 5;
   margin: 10px;
-  
+
   width: 200px;
   max-width: 80%;
   height: auto;
@@ -63,12 +63,12 @@ body {
 
 #sect2 h1 {
   font-family: "paint";
-  
+
   color: #e4d2c4;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
-  
+
   width: 100%;
   padding: 30px;
   margin-bottom: 0;
@@ -193,12 +193,12 @@ body {
 
 #sectQualite h1 {
   font-family: "paint";
-  
+
   color: #e4d2c4;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
- 
+
   width: 100%;
   padding: 30px;
   margin-top: 0;
@@ -213,7 +213,6 @@ body {
   justify-content: space-evenly;
   min-height: 120vh;
   width: 100%;
-  
 }
 
 .n1,
@@ -253,12 +252,13 @@ body {
   font-size: 80px;
 }
 
-.hoverQ,.hoverQ1{
+.hoverQ,
+.hoverQ1 {
   position: absolute;
   width: 0;
   height: 400px;
   left: 0;
-  background-color:black;
+  background-color: black;
   z-index: 10;
   opacity: 0;
   transition: 2s ease-in-out;
@@ -268,15 +268,12 @@ body {
   justify-content: space-evenly;
 }
 
-.hoverTitre,.hoverTitre1{
-
+.hoverTitre,
+.hoverTitre1 {
   font-size: 20px;
   opacity: 1;
   color: white;
-
 }
-
-
 
 /******************************************************sect3************************************************/
 
@@ -292,12 +289,12 @@ body {
 
 #sect3 h1 {
   font-family: "paint";
-  
+
   color: #e4d2c4;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
- 
+
   width: 100%;
   padding: 30px;
   margin-bottom: 120px;
@@ -444,7 +441,7 @@ form {
   border: #e4d2c4 3px solid;
 }
 
-.saisie > * {
+.saisie>* {
   width: 70%;
   height: 50px;
   border-radius: 5px;
