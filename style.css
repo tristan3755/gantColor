@@ -38,8 +38,8 @@ body {
   position: absolute;
   z-index: 5;
   margin: 10px;
-  font-size: 40px;
-  width: 300px;
+  
+  width: 200px;
   max-width: 80%;
   height: auto;
   filter: grayscale(30%);
@@ -58,27 +58,27 @@ body {
   align-items: center;
   min-height: 150vh;
   width: 100%;
+  margin-top: 100px;
 }
 
 #sect2 h1 {
   font-family: "paint";
-  color:#e4d2c4;
+  
+  color: #e4d2c4;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
-  border-top: #e4d2c4  solid 1px;
-  border-bottom: #e4d2c4 solid 1px;
+  
   width: 100%;
   padding: 30px;
   margin-bottom: 0;
-}  
+}
 
 .contener {
   position: relative;
   margin-top: 0;
   width: 100%;
   min-height: 150vh;
-
 }
 
 .cercle {
@@ -94,7 +94,6 @@ body {
   background-position: center;
   background-size: cover;
   cursor: pointer;
- 
 }
 
 .cercle.cercle1 {
@@ -181,6 +180,104 @@ body {
   font-size: 25px;
 }
 
+/******************************************************sectQualite************************************************/
+#sectQualite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: 120vh;
+  width: 100%;
+  background-color: white;
+}
+
+#sectQualite h1 {
+  font-family: "paint";
+  
+  color: #e4d2c4;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+ 
+  width: 100%;
+  padding: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.engagement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 120vh;
+  width: 100%;
+  
+}
+
+.n1,
+.n2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  max-width: 80%;
+  height: 480px;
+  border-right: black 1px solid;
+  border-left: black 1px solid;
+  margin: 50px;
+  transition: 2s ease-in-out;
+}
+
+.n1i,
+.n2i {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+}
+
+.n1 p {
+  font-size: 80px;
+}
+
+.n2 p {
+  font-size: 80px;
+}
+
+.hoverQ,.hoverQ1{
+  position: absolute;
+  width: 0;
+  height: 400px;
+  left: 0;
+  background-color:black;
+  z-index: 10;
+  opacity: 0;
+  transition: 2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hoverTitre,.hoverTitre1{
+
+  font-size: 20px;
+  opacity: 1;
+  color: white;
+
+}
+
+
+
 /******************************************************sect3************************************************/
 
 #sect3 {
@@ -195,15 +292,15 @@ body {
 
 #sect3 h1 {
   font-family: "paint";
+  
   color: #e4d2c4;
   font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
-  border-top: #e4d2c4 solid 1px;
-  border-bottom: #e4d2c4 solid 1px;
+ 
   width: 100%;
   padding: 30px;
-  margin-top: 0;
+  margin-bottom: 120px;
 }
 
 .img1,
@@ -236,7 +333,6 @@ body {
   background-color: #e4d2c4;
   opacity: 0;
   transition: 2s ease-in-out;
-
 }
 
 .img1 {
@@ -302,7 +398,6 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  
 }
 
 .contact {
@@ -310,7 +405,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   background-image: url(./ressources/images/contact.jpg);
   background-size: cover;
@@ -349,7 +444,7 @@ form {
   border: #e4d2c4 3px solid;
 }
 
-.saisie>* {
+.saisie > * {
   width: 70%;
   height: 50px;
   border-radius: 5px;
@@ -384,7 +479,6 @@ textarea {
   height: 100vh;
 }
 
-
 .bouton {
   position: relative;
   background-color: whitesmoke;
@@ -396,7 +490,6 @@ textarea {
   color: #e4d2c4;
   margin: 20px;
 }
-
 
 .bouton span {
   position: absolute;
@@ -450,7 +543,6 @@ textarea {
   transform-origin: top;
   transition: transform 0.25s;
 }
-
 
 .bouton span:nth-child(4) {
   right: 0;

@@ -346,3 +346,80 @@ document.querySelector(".img9").addEventListener('mouseout',(event)=>{
 
 
 })
+
+
+////////////////////////////////////////////////qualité/////////////////////////////////////////////////////////////////
+
+document.querySelector(".n1").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hoverQ")
+  monHover.style.width="100%"
+  monHover.style.opacity="1"
+
+  let disparait=document.querySelector(".n2")
+  disparait.style.opacity="0"
+
+  let bg=document.querySelector(".engagement")
+  bg.style.backgroundImage="url(./ressources/images/client.jpg)"
+  bg.style.transition="4s ease"
+  bg.style.backgroundSize="cover"
+  bg.style.backgroundPosition="center"
+  bg.style.backgroundRepeat="no-repeat"
+  
+
+
+})
+
+document.querySelector(".n1").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hoverQ")
+  monHover.style.width="0"
+  monHover.style.opacity="0"
+
+  let disparait=document.querySelector(".n2")
+  disparait.style.opacity="1"
+
+  let titre=document.querySelector(".hoverTitre")
+  titre.style.opacity="1"
+
+  let bg=document.querySelector(".engagement")
+  
+  bg.style.backgroundImage=""
+  bg.style.transition="4s ease"
+
+})
+
+document.querySelector(".n2").addEventListener('mouseover',(event)=>{
+
+  let monHover=document.querySelector(".hoverQ1")
+  monHover.style.width="100%"
+  monHover.style.opacity="1"
+
+  let disparait=document.querySelector(".n1")
+  disparait.style.opacity="0"
+  
+  let bg=document.querySelector(".engagement")
+  bg.style.backgroundImage="url(./ressources/images/outils.jpg)"
+  bg.style.transition="4s ease"
+  bg.style.backgroundSize="cover"
+  bg.style.backgroundPosition="center"
+  bg.style.backgroundRepeat="no-repeat"
+
+
+})
+
+document.querySelector(".n2").addEventListener('mouseout',(event)=>{
+
+  let monHover=document.querySelector(".hoverQ1")
+  monHover.style.width="0"
+  monHover.style.opacity="0"
+
+  let disparait=document.querySelector(".n1")
+  disparait.style.opacity="1"
+
+  let bg=document.querySelector(".engagement")
+  
+  bg.style.backgroundImage=""
+  bg.style.transition="4s ease"
+
+})
