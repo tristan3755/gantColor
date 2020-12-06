@@ -61,17 +61,24 @@ body {
   margin-top: 100px;
 }
 
-#sect2 h1 {
-  font-family: "paint";
 
-  color: #e4d2c4;
-  font-size: 30px;
+.titreSect2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "paint";
+  align-self: center;
+  background-color: #e4d2c4;
+  font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-
-  width: 100%;
-  padding: 30px;
-  margin-bottom: 0;
+  color: rgb(92, 73, 73);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  
 }
 
 .contener {
@@ -191,19 +198,6 @@ body {
   background-color: white;
 }
 
-#sectQualite h1 {
-  font-family: "paint";
-
-  color: #e4d2c4;
-  font-size: 30px;
-  letter-spacing: 5px;
-  text-align: center;
-
-  width: 100%;
-  padding: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .engagement {
   display: flex;
@@ -322,19 +316,7 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: white;
-}
-
-#sect3 h1 {
-  font-family: "paint";
-
-  color: #e4d2c4;
-  font-size: 30px;
-  letter-spacing: 5px;
-  text-align: center;
-
-  width: 100%;
-  padding: 30px;
-  margin-bottom: 120px;
+  margin-top: 150px;
 }
 
 .img1,
@@ -432,6 +414,7 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
+  margin-top: 150px;
 }
 
 .contact {
@@ -446,12 +429,7 @@ body {
   background-position: right;
 }
 
-.contact h1 {
-  font-family: "paint";
-  color: white;
-  font-size: 40px;
-  letter-spacing: 5px;
-}
+
 
 form {
   display: flex;
@@ -459,8 +437,8 @@ form {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  min-height: 120vh;
-  background-attachment: fixed;
+  min-height: 60vh;
+  
 }
 
 .input {
@@ -470,7 +448,7 @@ form {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  min-height: 120vh;
+  min-height: 60vh;
 }
 
 .input input {
@@ -488,14 +466,18 @@ form {
 }
 
 .textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 50%;
-  height: 400px;
+  height: 200px;
   min-width: 300px;
 }
 
 textarea {
   resize: none;
-  width: 100%;
+  width: 50%;
   height: 100%;
   border-radius: 5px;
   text-align: center;
@@ -510,16 +492,16 @@ textarea {
   align-items: center;
   justify-content: center;
   width: 40%;
-  height: 100vh;
+  height: 50vh;
 }
 
 .bouton {
   position: relative;
   background-color: whitesmoke;
-  width: 250px;
-  height: 80px;
+  width: 200px;
+  height: 50px;
   border: none;
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 5px;
   color: #e4d2c4;
   margin: 20px;
