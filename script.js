@@ -2,8 +2,9 @@ document.querySelector(".cercle1").addEventListener("click", (event) => {
   cercle();
 });
 
-window.addEventListener("scroll", (event) => {
+document.getElementById('return') .addEventListener("mouseenter", (event) => {
   retourCercle();
+ 
 });
 
 function cercle() {
@@ -28,8 +29,9 @@ document.querySelector(".cercle2").addEventListener("click", (event) => {
   cercle2();
 });
 
-window.addEventListener("scroll", (event) => {
+document.getElementById('return1') .addEventListener("mouseenter", (event) => {
   retourCercle2();
+ 
 });
 
 function cercle2() {
@@ -52,10 +54,10 @@ document.querySelector(".cercle3").addEventListener("click", (event) => {
   cercle3();
 });
 
-window.addEventListener("scroll", (event) => {
+document.getElementById('return2') .addEventListener("mouseenter", (event) => {
   retourCercle3();
+ 
 });
-
 function cercle3() {
   let monCercle = document.querySelector(".cercle3");
   monCercle.style.clipPath = "circle(100% at center)";
@@ -76,8 +78,9 @@ document.querySelector(".cercle4").addEventListener("click", (event) => {
   cercle4();
 });
 
-window.addEventListener("scroll", (event) => {
+document.getElementById('return3') .addEventListener("mouseenter", (event) => {
   retourCercle4();
+ 
 });
 
 function cercle4() {
