@@ -289,7 +289,7 @@ document.querySelector(".img9").addEventListener("mouseout", (event) => {
 });
 
 ////////////////////////////////////////////////qualité/////////////////////////////////////////////////////////////////
-
+/*
 document.querySelector(".n1").addEventListener("mouseover", (event) => {
   let monHover = document.querySelector(".hoverQ");
 
@@ -318,3 +318,37 @@ document.querySelector(".n2").addEventListener("mouseover", (event) => {
   bg.style.backgroundPosition = "center";
   bg.style.backgroundRepeat = "no-repeat";
 });
+
+*/
+
+/****************************************parralax *******************************************/
+
+document.getElementById('parralax').addEventListener('mouseover',(event)=>{
+
+  window.addEventListener('scroll',(event)=>{
+
+    let image=document.getElementById('imageParralax')
+  
+    let valeur=window.scrollY
+  
+    image.style.top=valeur*0.1+'px'
+    image.style.transition="1s"
+  
+    let text=document.querySelector('.parralaxText')
+
+    text.style.top=valeur*-0.1+'px'
+    text.style.transition="1s"
+
+
+   
+
+
+})
+
+
+})
+
+
+
+
+
