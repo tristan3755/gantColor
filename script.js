@@ -289,88 +289,38 @@ document.querySelector(".img9").addEventListener("mouseout", (event) => {
 });
 
 ////////////////////////////////////////////////qualité/////////////////////////////////////////////////////////////////
-/*
-document.querySelector(".n1").addEventListener("mouseover", (event) => {
-  let monHover = document.querySelector(".hoverQ");
 
-  monHover.style.opacity = "1";
-
-
-
-  let bg = document.querySelector(".engagement");
-  bg.style.backgroundImage = "url(./ressources/images/client.jpg)";
-  bg.style.transition = "6s ease";
-  bg.style.backgroundSize = "cover";
-  bg.style.backgroundPosition = "center";
-  bg.style.backgroundRepeat = "no-repeat";
-});
-
-document.querySelector(".n2").addEventListener("mouseover", (event) => {
-  let monHover = document.querySelector(".hoverQ1");
-
-  monHover.style.opacity = "1";
-
-
-  let bg = document.querySelector(".engagement1");
-  bg.style.backgroundImage = "url(./ressources/images/outils.jpg)";
-  bg.style.transition = "6s ease";
-  bg.style.backgroundSize = "cover";
-  bg.style.backgroundPosition = "center";
-  bg.style.backgroundRepeat = "no-repeat";
-});
-
-*/
 
 /****************************************parralax *******************************************/
 
-document.getElementById('parralax').addEventListener('mouseover',(event)=>{
+window.addEventListener('scroll',(event)=>{
 
-  window.addEventListener('scroll',(event)=>{
+  let image=document.getElementById('imageParralax')
 
-    let image=document.getElementById('imageParralax')
-  
-    let valeur=window.scrollY
-  
-    image.style.top=valeur*0.1+'px'
-    image.style.transition="1s"
-  
-    let text=document.querySelector('.parralaxText')
+  let valeur=window.scrollY
 
-    text.style.top=valeur*-0.1+'px'
-    text.style.transition="1s"
+  image.style.top=valeur*0.08+'px'
+   image.style.transition="0.5s"
 
+  let text=document.querySelector('.parralaxText')
 
-   
-
-
-})
+  text.style.top=valeur*-0.08+'px'
+  text.style.transition="0.5s"
 })
 
 
+window.addEventListener('scroll',(event)=>{
 
-document.getElementById('parralax2').addEventListener('mouseover',(event)=>{
+  let image=document.getElementById('imgBox2')
 
-  window.addEventListener('scroll',(event)=>{
+  let valeur=window.scrollY
 
-    let image=document.getElementById('imgBox2')
-  
-    let valeur=window.scrollY
-  
-    image.style.top=valeur*+0.07+'px'
-    image.style.transition="1s"
-  
-    let text=document.querySelector('.parralaxText2')
+  image.style.top=valeur*+0.07+'px'
+  image.style.transition="0.5s"
 
-    text.style.top=valeur*-0.07+'px'
-    text.style.transition="1s"
+  let text=document.querySelector('.parralaxText2')
 
-
-   
-
+  text.style.top=valeur*-0.07+'px'
+  text.style.transition="0.5s"
 
 })
-})
-
-
-
-
