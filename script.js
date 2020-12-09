@@ -324,3 +324,70 @@ window.addEventListener('scroll',(event)=>{
   text.style.transition="0.5s"
 
 })
+
+window.addEventListener("scroll", (event) => {
+  nav();
+});
+
+function nav() {
+  let nav = document.querySelector("header");
+  nav.style.display = "flex";
+}
+
+/**********navBarResponsive ******************/
+
+document.getElementById("boutonMenu").addEventListener("click", (event) => {
+  menu();
+});
+
+document.getElementById("croix").addEventListener("click", (event) => {
+  menuOff();
+});
+
+function menu() {
+  let menu = document.getElementById("menuResponsive");
+  menu.style.display = "flex";
+}
+
+function menuOff() {
+  let menu = document.getElementById("menuResponsive");
+  menu.style.display = "none";
+}
+
+let mesLiens = [{
+    name: "Home",
+    lien: "#",
+  },
+
+  {
+    name: "A propos",
+    lien: "#aPropos",
+  },
+
+  {
+    name: "Nos Valeurs",
+    lien: "#portfolio",
+  },
+
+  {
+    name: "Contact",
+    lien: "#foot",
+  },
+
+
+];
+
+for (i in mesLiens) {
+  let monMenu = document.createElement("a");
+  monMenu.href = mesLiens[i].lien;
+  monMenu.innerHTML = mesLiens[i].name;
+
+  monMenu.addEventListener("click", (event) => {
+    let menu = document.getElementById("menuResponsive");
+    menu.style.display = "none";
+  });
+
+  document.getElementById("liens").appendChild(monMenu);
+}
+
+/**********navBarResponsive ******************/
