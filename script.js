@@ -361,17 +361,22 @@ let mesLiens = [{
 
   {
     name: "A propos",
-    lien: "#aPropos",
+    lien: "#sect2",
   },
 
   {
     name: "Nos Valeurs",
-    lien: "#portfolio",
+    lien: "#parralax",
+  },
+
+  {
+    name: "Nos Réalisations",
+    lien: "#sect3",
   },
 
   {
     name: "Contact",
-    lien: "#foot",
+    lien: "#sect4",
   },
 
 
