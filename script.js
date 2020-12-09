@@ -1,37 +1,73 @@
+let exit = false;
+console.log(exit);
+
+let ouverture = false;
+console.log(ouverture);
+
+let exit1 = false;
+console.log(exit1);
+
+let ouverture1 = false;
+console.log(ouverture1);
+
+let exit2 = false;
+console.log(exit1);
+
+let ouverture2 = false;
+console.log(ouverture1);
+
+let exit3 = false;
+console.log(exit1);
+
+let ouverture3 = false;
+console.log(ouverture1);
+
 document.querySelector(".cercle1").addEventListener("click", (event) => {
   cercle();
-});
-
-document.getElementById('return') .addEventListener("mouseenter", (event) => {
-  retourCercle();
- 
+  ouverture = !ouverture;
+  console.log(ouverture);
+  exit = false;
 });
 
 function cercle() {
   let monCercle = document.querySelector(".cercle1");
   monCercle.style.clipPath = "circle(100% at center)";
   monCercle.style.zIndex = "10";
-
   let monText = document.querySelector(".text");
   monText.style.opacity = "0.7";
 }
+
+document.getElementById("return").addEventListener("click", (event) => {
+  retourCercle();
+  exit = !exit;
+  ouverture = false;
+  console.log(exit);
+  event.stopPropagation();
+});
 
 function retourCercle() {
   let monCercle = document.querySelector(".cercle1");
   monCercle.style.clipPath = "circle(100px at 20% center)";
   monCercle.style.zIndex = "0";
-
   let monText = document.querySelector(".text");
   monText.style.opacity = "0";
 }
 
+/********stoppropagation  event    variable sur le click pour tester  */
+
 document.querySelector(".cercle2").addEventListener("click", (event) => {
   cercle2();
+  ouverture1 = !ouverture1;
+  console.log(ouverture1);
+  exit1 = false;
 });
 
-document.getElementById('return1') .addEventListener("mouseenter", (event) => {
+document.getElementById("return1").addEventListener("click", (event) => {
   retourCercle2();
- 
+  exit1 = !exit1;
+  ouverture1 = false;
+  console.log(exit1);
+  event.stopPropagation();
 });
 
 function cercle2() {
@@ -52,11 +88,17 @@ function retourCercle2() {
 
 document.querySelector(".cercle3").addEventListener("click", (event) => {
   cercle3();
+  ouverture2 = !ouverture2;
+  console.log(ouverture2);
+  exit2 = false;
 });
 
-document.getElementById('return2') .addEventListener("mouseenter", (event) => {
+document.getElementById("return2").addEventListener("click", (event) => {
   retourCercle3();
- 
+  exit2 = !exit2;
+  ouverture2 = false;
+  console.log(exit2);
+  event.stopPropagation();
 });
 function cercle3() {
   let monCercle = document.querySelector(".cercle3");
@@ -76,11 +118,17 @@ function retourCercle3() {
 
 document.querySelector(".cercle4").addEventListener("click", (event) => {
   cercle4();
+  ouverture3 = !ouverture3;
+  console.log(ouverture3);
+  exit3 = false;
 });
 
-document.getElementById('return3') .addEventListener("mouseenter", (event) => {
+document.getElementById("return3").addEventListener("click", (event) => {
   retourCercle4();
- 
+  exit3 = !exit3;
+  ouverture3 = false;
+  console.log(exit3);
+  event.stopPropagation();
 });
 
 function cercle4() {
@@ -290,40 +338,35 @@ document.querySelector(".img9").addEventListener("mouseout", (event) => {
 
 ////////////////////////////////////////////////qualité/////////////////////////////////////////////////////////////////
 
-
 /****************************************parralax *******************************************/
 
-window.addEventListener('scroll',(event)=>{
+window.addEventListener("scroll", (event) => {
+  let image = document.getElementById("imageParralax");
 
-  let image=document.getElementById('imageParralax')
+  let valeur = window.scrollY;
 
-  let valeur=window.scrollY
+  image.style.top = valeur * 0.08 + "px";
+  image.style.transition = "0.5s";
 
-  image.style.top=valeur*0.08+'px'
-   image.style.transition="0.5s"
+  let text = document.querySelector(".parralaxText");
 
-  let text=document.querySelector('.parralaxText')
+  text.style.top = valeur * -0.08 + "px";
+  text.style.transition = "0.5s";
+});
 
-  text.style.top=valeur*-0.08+'px'
-  text.style.transition="0.5s"
-})
+window.addEventListener("scroll", (event) => {
+  let image = document.getElementById("imgBox2");
 
+  let valeur = window.scrollY;
 
-window.addEventListener('scroll',(event)=>{
+  image.style.top = valeur * +0.07 + "px";
+  image.style.transition = "0.5s";
 
-  let image=document.getElementById('imgBox2')
+  let text = document.querySelector(".parralaxText2");
 
-  let valeur=window.scrollY
-
-  image.style.top=valeur*+0.07+'px'
-  image.style.transition="0.5s"
-
-  let text=document.querySelector('.parralaxText2')
-
-  text.style.top=valeur*-0.07+'px'
-  text.style.transition="0.5s"
-
-})
+  text.style.top = valeur * -0.07 + "px";
+  text.style.transition = "0.5s";
+});
 
 window.addEventListener("scroll", (event) => {
   nav();
@@ -354,7 +397,8 @@ function menuOff() {
   menu.style.display = "none";
 }
 
-let mesLiens = [{
+let mesLiens = [
+  {
     name: "Home",
     lien: "#",
   },
@@ -378,8 +422,6 @@ let mesLiens = [{
     name: "Contact",
     lien: "#sect4",
   },
-
-
 ];
 
 for (i in mesLiens) {

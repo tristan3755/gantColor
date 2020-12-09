@@ -5,7 +5,6 @@
 
 body {
   margin: 0;
-
 }
 
 #sect1 {
@@ -130,6 +129,22 @@ body {
   font-size: 40px;
   margin-top: 120px;
   color: white;
+}
+
+#return:hover {
+  color: black;
+}
+
+#return1:hover {
+  color: black;
+}
+
+#return2:hover {
+  color: black;
+}
+
+#return3:hover {
+  color: black;
 }
 
 .text,
@@ -343,7 +358,7 @@ form {
   border: #e4d2c4 3px solid;
 }
 
-.saisie > * {
+.saisie>* {
   width: 70%;
   height: 50px;
   border-radius: 5px;
@@ -487,11 +502,9 @@ textarea {
   height: 250px;
   border-radius: 50%;
   margin-bottom: 120px;
-  
 }
 
-#parralax
- {
+#parralax {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -500,9 +513,7 @@ textarea {
   width: 100%;
   font-size: 40px;
   margin-bottom: 120px;
-  
 }
-
 
 #parralax2 {
   position: relative;
@@ -512,8 +523,6 @@ textarea {
   min-height: 150vh;
   width: 100%;
   font-size: 40px;
- 
-  
 }
 
 #parralax .parralaxTitre,
@@ -522,25 +531,21 @@ textarea {
   font-size: 2em;
   margin-bottom: 20px;
   position: relative;
-  
 }
 
-@media(max-width:600px){
+@media (max-width: 600px) {
 
   #parralax .parralaxTitre,
-#parralax2 .parralaxTitre2 {
-  margin-left: 0;
-  font-size: 1em;
-   
-}
+  #parralax2 .parralaxTitre2 {
+    margin-left: 0;
+    font-size: 1em;
+  }
 
-
-.parralaxText p,
-.parralaxText2 p {
-  font-size: 10px;
-  color: white;
-}
-
+  .parralaxText p,
+  .parralaxText2 p {
+    font-size: 10px;
+    color: white;
+  }
 }
 
 .parralaxContent,
@@ -614,7 +619,7 @@ textarea {
 
 /************************************************footer*************************************************/
 
-footer{
+footer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -623,12 +628,9 @@ footer{
   height: 100px;
   margin-top: 150px;
   margin-bottom: 50px;
-  
-
 }
 
-
-.reseaux{
+.reseaux {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -639,7 +641,9 @@ footer{
   border-bottom: #e4d2c4 solid 2px;
 }
 
-.facebook,.instagram,.linkedin{
+.facebook,
+.instagram,
+.linkedin {
   position: relative;
   width: 30px;
   height: 30px;
@@ -649,12 +653,12 @@ footer{
   justify-content: center;
 }
 
-.facebook span,.instagram span,.linkedin span {
+.facebook span,
+.instagram span,
+.linkedin span {
   position: absolute;
   background-color: #e4d2c4;
 }
-
-
 
 .facebook span:nth-child(2) {
   left: 0;
@@ -672,8 +676,6 @@ footer{
   transition: transform 0.25s;
 }
 
-
-
 .facebook span:nth-child(4) {
   right: 0;
   bottom: 0;
@@ -689,9 +691,6 @@ footer{
   transform-origin: right;
   transition: transform 0.25s;
 }
-
-
-
 
 .instagram span:nth-child(2) {
   left: 0;
@@ -709,8 +708,6 @@ footer{
   transition: transform 0.25s;
 }
 
-
-
 .instagram span:nth-child(4) {
   right: 0;
   bottom: 0;
@@ -726,7 +723,6 @@ footer{
   transform-origin: right;
   transition: transform 0.25s;
 }
-
 
 .linkedin span:nth-child(2) {
   left: 0;
@@ -744,8 +740,6 @@ footer{
   transition: transform 0.25s;
 }
 
-
-
 .linkedin span:nth-child(4) {
   right: 0;
   bottom: 0;
@@ -762,21 +756,19 @@ footer{
   transition: transform 0.25s;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-
-.comm{
+.comm {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   width: 200px;
-  height:100px;
+  height: 100px;
 }
-
 
 /**************** header******************/
 
@@ -823,9 +815,8 @@ header {
 }
 
 #boutonMenu {
-  color:black;
+  color: black;
   font-size: 30px;
- 
 }
 
 #boutonMenu:hover {
@@ -877,7 +868,7 @@ header {
   height: 100px;
 }
 
-.reseauMenu a > * {
+.reseauMenu a>* {
   font-size: 30px;
   animation: lien 5s;
 }
@@ -891,7 +882,7 @@ header {
   width: 100%;
 }
 
-#liens > * {
+#liens>* {
   color: black;
   text-decoration: none;
   margin-bottom: 5px;
@@ -900,7 +891,7 @@ header {
   font-family: "Raleway", sans-serif;
 }
 
-#liens > *:hover {
+#liens>*:hover {
   color: black;
 }
 
