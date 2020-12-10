@@ -44,9 +44,6 @@ body {
   mix-blend-mode: screen;
 }
 
-
-
-
 #sect1 img {
   position: absolute;
   z-index: 5;
@@ -107,13 +104,15 @@ width: 100%;
   background-size: cover;
   text-shadow: black 25px 25px 25px;
   color: whitesmoke;
+  
 }
 
 .catégorie1{
-  background-image: url(./ressources/images/peinture.jpg);
+  background-image: url(./ressources/images/peinture1.jpg);
+ 
 }
 .catégorie2{
-  background-image: url(./ressources/images/floor.jpg);
+  background-image: url(./ressources/images/floor1.jpg);
 }
 .catégorie3{
   background-image: url(./ressources/images/oeuvre.jpg);
@@ -127,6 +126,8 @@ width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
  width: 80%;
+ 
+
 }
 
 .catégorie1 h2 {
@@ -181,9 +182,6 @@ width: 100%;
   margin-bottom: 55px;
 }
 
-
-
-
 @media (max-width: 900px) {
 
   #sect2{
@@ -193,8 +191,6 @@ width: 100%;
     display: flex;
   }
 }
-
-
 .titreSect2 {
   display: flex;
   flex-direction: column;
@@ -202,15 +198,19 @@ width: 100%;
   align-items: center;
   font-family: "paint";
   align-self: center;
-  background-color: #e4d2c4;
+ 
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color: rgb(92, 73, 73);
-  width: 250px;
+  color: white;
+  width: 100%;
   height: 250px;
-  border-radius: 50%;
+ 
   margin-bottom: 20px;
+  background-image: url(./ressources/images/traceRouge.png);
+  background-size: cover;
+  background-position: center;
+
 }
 
 .contener {
@@ -366,6 +366,30 @@ width: 100%;
   width: 100%;
   background-color: white;
   margin-top: 150px;
+}
+
+#sect3 .titreSect2{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "paint";
+  align-self: center;
+ 
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 250px;
+ 
+  margin-bottom: 20px;
+  background-image: url(./ressources/images/traceJaune.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 150px;
+
 }
 
 .img1,
@@ -637,14 +661,16 @@ textarea {
   align-items: center;
   font-family: "paint";
   align-self: center;
-  background-color: #e4d2c4;
+  
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color: rgb(92, 73, 73);
-  width: 250px;
+  color:white;
+  width: 100%;
   height: 250px;
-  border-radius: 50%;
+  background-image: url(./ressources/images/traceOrange.png);
+  background-position: center;
+  background-size: cover;
   margin-bottom: 120px;
 }
 
@@ -946,7 +972,7 @@ a {
 
 header {
   position: fixed;
-  display: none;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
