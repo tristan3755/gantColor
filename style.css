@@ -376,16 +376,14 @@ width: 100%;
   align-items: center;
   font-family: "paint";
   align-self: center;
- 
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
   color: white;
   width: 100%;
   height: 250px;
- 
   margin-bottom: 20px;
-  background-image: url(./ressources/images/traceJaune.png);
+  background-image: url(./ressources/images/traceRouge.png);
   background-size: cover;
   background-position: center;
   margin-bottom: 150px;
@@ -490,6 +488,26 @@ width: 100%;
   margin-top: 150px;
 }
 
+#sect4 .titreSect2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "paint";
+  align-self: center;
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  background-image: url(./ressources/images/traceOrange.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 150px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -561,7 +579,8 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 50%;
+  min-width: 300px;
   height: 50vh;
 }
 
