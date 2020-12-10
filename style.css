@@ -21,6 +21,15 @@ body {
   background-size: cover;
 }
 
+
+@media (max-width: 1000px) {
+#sect1{
+  background-attachment: scroll;
+}
+
+}
+
+
 #sect1::before {
   content: "";
   position: absolute;
@@ -34,6 +43,9 @@ body {
   background-size: cover;
   mix-blend-mode: screen;
 }
+
+
+
 
 #sect1 img {
   position: absolute;
@@ -101,6 +113,13 @@ body {
   background-size: cover;
   cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  .cercle{
+    background-attachment: scroll;
+  }
+  
+  }
 
 .cercle.cercle1 {
   background-image: url(./ressources/images/peinture.jpg);
