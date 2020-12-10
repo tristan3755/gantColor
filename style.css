@@ -531,6 +531,7 @@ textarea {
   font-size: 2em;
   margin-bottom: 20px;
   position: relative;
+  font-family: "Raleway", sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -761,7 +762,7 @@ a {
   color: black;
 }
 
-.comm {
+.comm a{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -770,6 +771,16 @@ a {
   height: 100px;
 }
 
+.comm>*{
+  font-family: "NeonFuture";
+}
+
+
+
+@font-face {
+  font-family: "NeonFuture";
+  src: url("./ressources/font/NeonF.ttf");
+}
 /**************** header******************/
 
 @keyframes apparition {
@@ -944,3 +955,5 @@ header {
     margin-left: 15px;
   }
 }
+
+
