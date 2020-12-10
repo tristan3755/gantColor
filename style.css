@@ -379,7 +379,7 @@ form {
 
 textarea {
   resize: none;
-  width: 70%;
+  width: 100%;
   height: 100%;
   border-radius: 5px;
   text-align: center;
@@ -532,22 +532,28 @@ textarea {
   margin-bottom: 20px;
   position: relative;
   font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
 
   #parralax .parralaxTitre,
   #parralax2 .parralaxTitre2 {
-    margin-left: 0;
+    margin-left:5px;
     font-size: 1em;
   }
 
-  .parralaxText p,
-  .parralaxText2 p {
-    font-size: 10px;
+  #PP1 {
+    font-size: 15px;
+    color: white;
+  }
+  #PP2 {
+    font-size: 15px;
     color: white;
   }
 }
+
+
 
 .parralaxContent,
 .parralaxContent2 {
@@ -625,7 +631,6 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
   width: 100%;
   height: 100px;
   margin-top: 150px;
