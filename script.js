@@ -23,6 +23,8 @@ console.log(exit1);
 let ouverture3 = false;
 console.log(ouverture1);
 
+let isSafari = window.chrome!== undefined;
+
 document.querySelector(".cercle1").addEventListener("click", (event) => {
   cercle();
   ouverture = !ouverture;
@@ -346,13 +348,13 @@ window.addEventListener("scroll", (event) => {
 
   let valeur = window.scrollY;
 
-  image.style.top = valeur * 0.08 + "px";
-  image.style.transition = "0.5s";
+  image.style.top = (valeur*0.08)+ "px";
+  image.style.transition = "0.2s";
 
   let text = document.querySelector(".parralaxText");
 
   text.style.top = valeur * -0.08 + "px";
-  text.style.transition = "0.5s";
+  text.style.transition = "0.2s";
 });
 
 window.addEventListener("scroll", (event) => {
@@ -361,12 +363,12 @@ window.addEventListener("scroll", (event) => {
   let valeur = window.scrollY;
 
   image.style.top = valeur * +0.07 + "px";
-  image.style.transition = "0.5s";
+  image.style.transition = "0.2s";
 
   let text = document.querySelector(".parralaxText2");
 
   text.style.top = valeur * -0.07 + "px";
-  text.style.transition = "0.5s";
+  text.style.transition = "0.2s";
 });
 
 window.addEventListener("scroll", (event) => {
@@ -397,45 +399,81 @@ function menuOff() {
   let menu = document.getElementById("menuResponsive");
   menu.style.display = "none";
 }
-
+{
 let mesLiens = [
   {
     name: "Home",
     lien: "#",
+    lienSafari: "#",
   },
 
   {
     name: "A propos",
     lien: "#sect2",
+    lienSafari: "#mobileCategorie",
   },
 
   {
     name: "Nos Valeurs",
     lien: "#parralax",
+    lienSafari: "#parralax",
   },
 
   {
     name: "Nos Réalisations",
     lien: "#sect3",
+    lienSafari: "#sect3",
   },
 
   {
     name: "Contact",
     lien: "#sect4",
+    lienSafari: "#sect4",
   },
 ];
 
 for (i in mesLiens) {
-  let monMenu = document.createElement("a");
-  monMenu.href = mesLiens[i].lien;
-  monMenu.innerHTML = mesLiens[i].name;
-
-  monMenu.addEventListener("click", (event) => {
-    let menu = document.getElementById("menuResponsive");
-    menu.style.display = "none";
-  });
-
-  document.getElementById("liens").appendChild(monMenu);
+  if(isSafari){
+    let monMenu = document.createElement("a");
+    monMenu.href = mesLiens[i].lienSafari;
+    monMenu.innerHTML = mesLiens[i].name;
+    monMenu.addEventListener("click", (event) => {
+      let menu = document.getElementById("menuResponsive");
+      menu.style.display = "none";
+    });
+    document.getElementById("liens").appendChild(monMenu);
+  }else{
+    let monMenu2 = document.createElement("a");
+    monMenu2.href = mesLiens[i].lien;
+    monMenu2.innerHTML = mesLiens[i].name;
+    monMenu2.addEventListener("click", (event) => {
+      let menu = document.getElementById("menuResponsive");
+      menu.style.display = "none";
+      
+    });
+    document.getElementById("liens").appendChild(monMenu2);
+  }
+ 
+  
 }
 
+
+
+}
 /**********navBarResponsive ******************/
+
+/***************************************detecter le tas de merde de safari  **********************************************/
+
+
+if (isSafari){ 
+  
+ let mesBulles=document.getElementById('sect2')
+ mesBulles.style.display="none"
+
+ let mobile=document.getElementById('mobileCategorie')
+ mobile.style.display="flex"
+ 
+
+
+  console.log("Safari, yeah!")
+}
