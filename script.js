@@ -433,7 +433,7 @@ let mesLiens = [
 ];
 
 for (i in mesLiens) {
-  if(isSafari){
+  if(isSafari || window.matchMedia("(max-width:900px)").matches){
     let monMenu = document.createElement("a");
     monMenu.href = mesLiens[i].lienSafari;
     monMenu.innerHTML = mesLiens[i].name;
@@ -442,6 +442,7 @@ for (i in mesLiens) {
       menu.style.display = "none";
     });
     document.getElementById("liens").appendChild(monMenu);
+    
   }else{
     let monMenu2 = document.createElement("a");
     monMenu2.href = mesLiens[i].lien;
