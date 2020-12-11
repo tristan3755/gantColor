@@ -477,4 +477,30 @@ if (isSafari){
 
 
   console.log("Safari, yeah!")
+
 }
+
+
+
+/*******************************************************carroussel ********************************************************/
+
+const slider=document.querySelector('.corpsCarroussel')
+const imageSlider=document.querySelectorAll('.corpsCarroussel img')
+
+const precedent=document.getElementById('gauche')
+const suivant=document.getElementById('droite')
+
+let counter=1
+
+const taille=imageSlider[0].clientWidth
+
+slider.style.transform='translateX('+ (-taille * counter) + 'px)'
+
+suivant.addEventListener('click',(event)=>{
+
+  slider.style.transition='transform 0.4s ease-in-out'
+  counter++
+  console.log(counter)
+  slider.style.transform='translateX('+ (-taille * counter) + 'px)'
+
+})

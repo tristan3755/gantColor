@@ -1154,4 +1154,31 @@ header {
 }
 
 
-/************************************************rsponsive safari de mes couilles**************************************************************/
+/************************************************carroussel**************************************************************/
+
+
+#carroussel{
+  
+  
+  width: 60%;
+  margin: auto;
+}
+
+
+.corpsCarroussel{
+  display: flex;
+ height: 500px;
+  width: 100%;
+  overflow: hidden; 
+  border: 5px solid black;
+}
+
+.corpsCarroussel img{
+  width: 500px;
+  height: 500px;
+}
+
+#derniereImage,#premiereImage{
+  width: 500px;
+  height: 500px;
+}
