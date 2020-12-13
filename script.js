@@ -490,50 +490,38 @@ const imageSlider=document.querySelectorAll('.corpsCarroussel img')
 const precedent=document.getElementById('gauche')
 const suivant=document.getElementById('droite')
 
-let counter=1
+let counter=0
 
 const taille=imageSlider[0].clientWidth
 
 slider.style.transform='translateX('+ (-taille * counter) + 'px)'
 
 suivant.addEventListener('click',(event)=>{
+next()
+})
+
+precedent.addEventListener('click',(event)=>{
+preced()
+
+})
+
+function next(){
   if(counter>=imageSlider.length-1) return;
   slider.style.transition='transform 1s ease-in-out'
   counter++
   
   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
 
-})
+}
 
-precedent.addEventListener('click',(event)=>{
-if(counter<=0) return;
+function preced(){
+  if(counter<=0) return;
   slider.style.transition='transform 1s ease-in-out'
   counter--
   
   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
 
-})
-/*
-
-slider.addEventListener('transitionend',(event)=>{
-
-  // console.log('fire')
-
-  if(imageSlider[counter].id==="derniereImage"){
-
-    slider.style.transition='none'
-    console.log('none')
-     counter=imageSlider.lenght -2
-     slider.style.transform='translateX('+ (-taille * counter) + 'px)'    
 }
 
-if(imageSlider[counter].id==="premiereImage"){
-
-  slider.style.transition='none'
-  console.log('none')
-   counter=imageSlider.lenght -counter
-   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
-   
-}
-
-})*/
+next()
+preced()
