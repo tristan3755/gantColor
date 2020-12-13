@@ -513,7 +513,7 @@ if(counter<=0) return;
   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
 
 })
-
+/*
 
 slider.addEventListener('transitionend',(event)=>{
 
@@ -536,4 +536,4 @@ if(imageSlider[counter].id==="premiereImage"){
    
 }
 
-})
+})*/
