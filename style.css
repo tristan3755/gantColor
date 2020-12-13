@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -1155,30 +1156,35 @@ header {
 
 
 /************************************************carroussel**************************************************************/
+#sectCarroussel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
 
+}
 
 #carroussel{
-  
-  
-  width: 60%;
+ 
+
+  width: 500px;
+  max-width: 80%;
   margin: auto;
+  overflow: hidden;
+  border: black 3px solid;
+  border-radius:5px;
+  
+ 
 }
 
 
 .corpsCarroussel{
+
   display: flex;
- height: 500px;
   width: 100%;
-  overflow: hidden; 
-  border: 5px solid black;
-}
-
-.corpsCarroussel img{
-  width: 500px;
   height: 500px;
-}
-
-#derniereImage,#premiereImage{
-  width: 500px;
-  height: 500px;
+ 
+ 
 }

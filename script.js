@@ -497,10 +497,43 @@ const taille=imageSlider[0].clientWidth
 slider.style.transform='translateX('+ (-taille * counter) + 'px)'
 
 suivant.addEventListener('click',(event)=>{
-
-  slider.style.transition='transform 0.4s ease-in-out'
+  if(counter>=imageSlider.length-1) return;
+  slider.style.transition='transform 1s ease-in-out'
   counter++
-  console.log(counter)
+  
   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
+
+})
+
+precedent.addEventListener('click',(event)=>{
+if(counter<=0) return;
+  slider.style.transition='transform 1s ease-in-out'
+  counter--
+  
+  slider.style.transform='translateX('+ (-taille * counter) + 'px)'
+
+})
+
+
+slider.addEventListener('transitionend',(event)=>{
+
+  // console.log('fire')
+
+  if(imageSlider[counter].id==="derniereImage"){
+
+    slider.style.transition='none'
+    console.log('none')
+     counter=imageSlider.lenght -2
+     slider.style.transform='translateX('+ (-taille * counter) + 'px)'    
+}
+
+if(imageSlider[counter].id==="premiereImage"){
+
+  slider.style.transition='none'
+  console.log('none')
+   counter=imageSlider.lenght -counter
+   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
+   
+}
 
 })
