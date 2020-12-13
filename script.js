@@ -507,7 +507,7 @@ preced()
 
 function next(){
   if(counter>=imageSlider.length-1) return;
-  slider.style.transition='transform 1s ease-in-out'
+  slider.style.transition='transform 0.4s ease-in-out'
   counter++
   
   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
@@ -516,7 +516,7 @@ function next(){
 
 function preced(){
   if(counter<=0) return;
-  slider.style.transition='transform 1s ease-in-out'
+  slider.style.transition='transform 0.4s ease-in-out'
   counter--
   
   slider.style.transform='translateX('+ (-taille * counter) + 'px)'
