@@ -214,7 +214,7 @@ function hover4() {
 }
 
 /***********************************************************carroussel ************************************************************/
-
+/*
 document.querySelector(".img1").addEventListener("mouseover", (event) => {
   let monHover = document.querySelector(".hover1");
   monHover.style.width = "100%";
@@ -337,7 +337,7 @@ document.querySelector(".img9").addEventListener("mouseout", (event) => {
   monHover.style.width = "0%";
   monHover.style.height = "100%";
   monHover.style.opacity = "0";
-});
+});*/
 
 ////////////////////////////////////////////////qualité/////////////////////////////////////////////////////////////////
 
@@ -421,8 +421,8 @@ let mesLiens = [
 
   {
     name: "Nos Réalisations",
-    lien: "#sect3",
-    lienSafari: "#sect3",
+    lien: "#sectCarroussel",
+    lienSafari: "#sectCarroussel",
   },
 
   {
