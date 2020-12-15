@@ -1,4 +1,3 @@
-
 let exit = false;
 console.log(exit);
 
@@ -23,7 +22,7 @@ console.log(exit1);
 let ouverture3 = false;
 console.log(ouverture1);
 
-let isSafari = window.safari!== undefined;
+let isSafari = window.safari !== undefined;
 
 document.querySelector(".cercle1").addEventListener("click", (event) => {
   cercle();
@@ -213,9 +212,6 @@ function hover4() {
   monHover1.style.transition = "2s";
 }
 
-
-
-
 ////////////////////////////////////////////////qualité/////////////////////////////////////////////////////////////////
 
 /****************************************parralax *******************************************/
@@ -225,7 +221,7 @@ window.addEventListener("scroll", (event) => {
 
   let valeur = window.scrollY;
 
-  image.style.top = (valeur*0.08)+ "px";
+  image.style.top = valeur * 0.08 + "px";
   image.style.transition = "0.2s";
 
   let text = document.querySelector(".parralaxText");
@@ -277,126 +273,109 @@ function menuOff() {
   menu.style.display = "none";
 }
 {
-let mesLiens = [
-  {
-    name: "Home",
-    lien: "#",
-    lienSafari: "#",
-  },
+  let mesLiens = [
+    {
+      name: "Home",
+      lien: "#",
+      lienSafari: "#",
+    },
 
-  {
-    name: "A propos",
-    lien: "#sect2",
-    lienSafari: "#mobileCategorie",
-  },
+    {
+      name: "A propos",
+      lien: "#sect2",
+      lienSafari: "#mobileCategorie",
+    },
 
-  {
-    name: "Nos Valeurs",
-    lien: "#parralax",
-    lienSafari: "#parralax",
-  },
+    {
+      name: "Nos Valeurs",
+      lien: "#parralax",
+      lienSafari: "#parralax",
+    },
 
-  {
-    name: "Nos Réalisations",
-    lien: "#sectCarroussel",
-    lienSafari: "#sectCarroussel",
-  },
+    {
+      name: "Nos Réalisations",
+      lien: "#sectCarroussel",
+      lienSafari: "#sectCarroussel",
+    },
 
-  {
-    name: "Contact",
-    lien: "#sect4",
-    lienSafari: "#sect4",
-  },
-];
+    {
+      name: "Contact",
+      lien: "#sect4",
+      lienSafari: "#sect4",
+    },
+  ];
 
-for (i in mesLiens) {
-  if(isSafari || window.matchMedia("(max-width:900px)").matches){
-    let monMenu = document.createElement("a");
-    monMenu.href = mesLiens[i].lienSafari;
-    monMenu.innerHTML = mesLiens[i].name;
-    monMenu.addEventListener("click", (event) => {
-      let menu = document.getElementById("menuResponsive");
-      menu.style.display = "none";
-    });
-    document.getElementById("liens").appendChild(monMenu);
-    
-  }else{
-    let monMenu2 = document.createElement("a");
-    monMenu2.href = mesLiens[i].lien;
-    monMenu2.innerHTML = mesLiens[i].name;
-    monMenu2.addEventListener("click", (event) => {
-      let menu = document.getElementById("menuResponsive");
-      menu.style.display = "none";
-      
-    });
-    document.getElementById("liens").appendChild(monMenu2);
+  for (i in mesLiens) {
+    if (isSafari || window.matchMedia("(max-width:900px)").matches) {
+      let monMenu = document.createElement("a");
+      monMenu.href = mesLiens[i].lienSafari;
+      monMenu.innerHTML = mesLiens[i].name;
+      monMenu.addEventListener("click", (event) => {
+        let menu = document.getElementById("menuResponsive");
+        menu.style.display = "none";
+      });
+      document.getElementById("liens").appendChild(monMenu);
+    } else {
+      let monMenu2 = document.createElement("a");
+      monMenu2.href = mesLiens[i].lien;
+      monMenu2.innerHTML = mesLiens[i].name;
+      monMenu2.addEventListener("click", (event) => {
+        let menu = document.getElementById("menuResponsive");
+        menu.style.display = "none";
+      });
+      document.getElementById("liens").appendChild(monMenu2);
+    }
   }
- 
-  
-}
-
-
-
 }
 /**********navBarResponsive ******************/
 
 /***************************************detecter le tas de merde de safari  **********************************************/
 
+if (isSafari) {
+  let mesBulles = document.getElementById("sect2");
+  mesBulles.style.display = "none";
 
-if (isSafari){ 
-  
- let mesBulles=document.getElementById('sect2')
- mesBulles.style.display="none"
+  let mobile = document.getElementById("mobileCategorie");
+  mobile.style.display = "flex";
 
- let mobile=document.getElementById('mobileCategorie')
- mobile.style.display="flex"
- 
-
-
-  console.log("Safari, yeah!")
-
+  console.log("Safari, yeah!");
 }
-
-
 
 /*******************************************************carroussel ********************************************************/
 
-const slider=document.querySelector('.corpsCarroussel')
-const imageSlider=document.querySelectorAll('.corpsCarroussel img')
+const slider = document.querySelector(".corpsCarroussel");
+const imageSlider = document.querySelectorAll(".corpsCarroussel img");
 
-const precedent=document.getElementById('gauche')
-const suivant=document.getElementById('droite')
+const precedent = document.getElementById("gauche");
+const suivant = document.getElementById("droite");
 
-let counter=0
+let counter = 0;
 
-const taille=imageSlider[0].clientWidth
+const taille = imageSlider[0].clientWidth;
 
-slider.style.transform='translateX('+ (-taille * counter) + 'px)'
+slider.style.transform = "translateX(" + -taille * counter + "px)";
 
-suivant.addEventListener('click',(event)=>{
-next()
-})
+suivant.addEventListener("click", (event) => {
+  next();
+});
 
-precedent.addEventListener('click',(event)=>{
-preced()
+precedent.addEventListener("click", (event) => {
+  preced();
+});
 
-})
-
-function next(){
-  if(counter>=imageSlider.length-1) return;
-  slider.style.transition='transform 0.4s ease-in-out'
-  counter++
-  slider.style.transform='translateX('+ (-taille * counter) + 'px)'
-
+function next() {
+  if (counter >= imageSlider.length - 1) return;
+  slider.style.transition = "transform 0.4s ease-in-out";
+  counter++;
+  slider.style.transform = "translateX(" + -taille * counter + "px)";
 }
 
-function preced(){
-  if(counter<=0) return;
-  slider.style.transition='transform 0.4s ease-in-out'
-  counter--
-  slider.style.transform='translateX('+ (-taille * counter) + 'px)'
-
+function preced() {
+  if (counter <= 0) return;
+  slider.style.transition = "transform 0.4s ease-in-out";
+  counter--;
+  slider.style.transform = "translateX(" + -taille * counter + "px)";
 }
 
-next()
-preced()
+next();
+preced();
