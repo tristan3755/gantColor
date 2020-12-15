@@ -73,6 +73,8 @@ body {
   
 }
 
+#sect2:target { padding-top: 80px; margin-top: -80px; } 
+
 #mobileCategorie{
 display: none;
 flex-direction: column;
@@ -81,6 +83,8 @@ min-height: 100vh;
 width: 100%;
 margin-top: 100px;
 }
+
+#mobileCategorie:target { padding-top: 80px; margin-top: -80px; } 
 
 .contenerMobile{
   display: flex;
@@ -366,7 +370,7 @@ width: 100%;
   min-height: 100vh;
   margin-top: 150px;
 }
-
+#sect4:target { padding-top: 80px; margin-top: -80px; } 
 #sect4 .titreSect2{
   display: flex;
   flex-direction: column;
@@ -582,7 +586,7 @@ textarea {
   margin-bottom: 120px;
   
 }
-
+#parralax:target { padding-top: 80px; margin-top: -80px; } 
 #parralax2 {
   position: relative;
   display: flex;
@@ -1040,9 +1044,10 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 150vh;
 
 }
+#sectCarroussel:target { padding-top: 80px; margin-top: -80px; } 
 
 #carroussel{
   margin-top: 100px;
