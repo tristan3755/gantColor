@@ -200,13 +200,14 @@ width: 100%;
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color: #e4d2c4;
+  color: white;
   width: 250px;
   height: 250px;
   margin-bottom: 20px;
   margin-bottom: 150px;
   border-radius: 50%;
   border: solid 3px #e4d2c4;
+  background-color: #e4d2c4;
 
 
 }
@@ -376,13 +377,14 @@ width: 100%;
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color: #e4d2c4;
+  color: white;
   width: 250px;
   height: 250px;
   margin-bottom: 20px;
   margin-bottom: 150px;
   border-radius: 50%;
   border: solid 3px #e4d2c4;
+  background-color: #e4d2c4;
 }
 
 .contact {
@@ -560,12 +562,13 @@ textarea {
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color:#e4d2c4;
+  color:white;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 3px solid #e4d2c4;
   margin-bottom: 120px;
+  background-color: #e4d2c4;
 }
 
 #parralax {
