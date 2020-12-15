@@ -23,7 +23,7 @@ console.log(exit1);
 let ouverture3 = false;
 console.log(ouverture1);
 
-let isSafari = window.chrome!== undefined;
+let isSafari = window.safari!== undefined;
 
 document.querySelector(".cercle1").addEventListener("click", (event) => {
   cercle();
