@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -23,14 +22,11 @@ body {
   background-size: cover;
 }
 
-
 @media (max-width: 1000px) {
-#sect1{
-  background-attachment: scroll;
+  #sect1 {
+    background-attachment: scroll;
+  }
 }
-
-}
-
 
 #sect1::before {
   content: "";
@@ -50,7 +46,6 @@ body {
   position: absolute;
   z-index: 5;
   margin: 10px;
-
   width: 200px;
   max-width: 80%;
   height: auto;
@@ -71,39 +66,47 @@ body {
   min-height: 150vh;
   width: 100%;
   margin-top: 100px;
-  
 }
 
-#sect2:target { padding-top: 80px; margin-top: -80px; } 
-
-#mobileCategorie{
-display: none;
-flex-direction: column;
-align-items: center;
-min-height: 100vh;
-width: 100%;
-margin-top: 100px;
+#sect2:target {
+  padding-top: 80px;
+  margin-top: -80px;
 }
 
-#mobileCategorie:target { padding-top: 80px; margin-top: -80px; } 
+#mobileCategorie {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+}
 
-.contenerMobile{
+#mobileCategorie:target {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.contenerMobile {
   display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-evenly;
-flex-wrap: wrap;
-min-height: 70vh;
-width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  width: 100%;
 }
 
-.catégorie1,.catégorie2,.catégorie3,.catégorie4{
-
+.catégorie1,
+.catégorie2,
+.catégorie3,
+.catégorie4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height:400px;
-  width: 400px;
+  justify-content: center;
+  min-height: 550px;
+  width: 550px;
   max-width: 80%;
   margin: auto;
   margin-bottom: 40px;
@@ -112,28 +115,26 @@ width: 100%;
   background-size: cover;
   text-shadow: black 25px 25px 25px;
   color: whitesmoke;
-  
 }
 
-.catégorie1{
+.catégorie1 {
   background-image: url(./ressources/images/peinture1.jpg);
- 
 }
-.catégorie2{
+.catégorie2 {
   background-image: url(./ressources/images/floor1.jpg);
 }
-.catégorie3{
+.catégorie3 {
   background-image: url(./ressources/images/oeuvre.jpg);
 }
 
-.catégorie4{
+.catégorie4 {
   background-image: url(./ressources/images/façade.jpg);
 }
 
 .catégorie1 p {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
- width: 80%;
+  width: 80%;
 }
 
 .catégorie1 h2 {
@@ -141,7 +142,7 @@ width: 100%;
   letter-spacing: 5px;
   font-size: 25px;
   text-transform: uppercase;
-  margin-bottom: 55px;  
+  margin-bottom: 55px;
 }
 
 .catégorie2 p {
@@ -187,11 +188,10 @@ width: 100%;
 }
 
 @media (max-width: 900px) {
-
-  #sect2{
+  #sect2 {
     display: none;
   }
-  #mobileCategorie{
+  #mobileCategorie {
     display: flex;
   }
 }
@@ -213,8 +213,6 @@ width: 100%;
   border-radius: 50%;
   border: solid 3px #e4d2c4;
   background-color: #e4d2c4;
-
-
 }
 
 .contener {
@@ -240,11 +238,10 @@ width: 100%;
 }
 
 @media (max-width: 1000px) {
-  .cercle{
+  .cercle {
     background-attachment: scroll;
   }
-  
-  }
+}
 
 .cercle.cercle1 {
   background-image: url(./ressources/images/peinture.jpg);
@@ -359,7 +356,6 @@ width: 100%;
   text-transform: uppercase;
 }
 
-
 /******************************************************formulaire************************************************/
 
 #sect4 {
@@ -371,8 +367,11 @@ width: 100%;
   min-height: 100vh;
   margin-top: 150px;
 }
-#sect4:target { padding-top: 80px; margin-top: -80px; } 
-#sect4 .titreSect2{
+#sect4:target {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+#sect4 .titreSect2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,7 +427,7 @@ form {
   border: #e4d2c4 3px solid;
 }
 
-.saisie>* {
+.saisie > * {
   width: 70%;
   height: 50px;
   border-radius: 5px;
@@ -567,7 +566,7 @@ textarea {
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color:white;
+  color: white;
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -585,9 +584,11 @@ textarea {
   width: 100%;
   font-size: 40px;
   margin-bottom: 120px;
-  
 }
-#parralax:target { padding-top: 80px; margin-top: -80px; } 
+#parralax:target {
+  padding-top: 80px;
+  margin-top: -80px;
+}
 #parralax2 {
   position: relative;
   display: flex;
@@ -596,7 +597,6 @@ textarea {
   min-height: 150vh;
   width: 100%;
   font-size: 40px;
- 
 }
 
 #parralax .parralaxTitre,
@@ -610,10 +610,9 @@ textarea {
 }
 
 @media (max-width: 600px) {
-
   #parralax .parralaxTitre,
   #parralax2 .parralaxTitre2 {
-    margin-left:5px;
+    margin-left: 5px;
     font-size: 1em;
   }
 
@@ -626,8 +625,6 @@ textarea {
     color: white;
   }
 }
-
-
 
 .parralaxContent,
 .parralaxContent2 {
@@ -843,7 +840,7 @@ a {
   color: black;
 }
 
-.comm a{
+.comm a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -852,11 +849,9 @@ a {
   height: 100px;
 }
 
-.comm>*{
+.comm > * {
   font-family: "NeonFuture";
 }
-
-
 
 @font-face {
   font-family: "NeonFuture";
@@ -960,7 +955,7 @@ header {
   height: 100px;
 }
 
-.reseauMenu a>* {
+.reseauMenu a > * {
   font-size: 30px;
   animation: lien 5s;
 }
@@ -974,7 +969,7 @@ header {
   width: 100%;
 }
 
-#liens>* {
+#liens > * {
   color: black;
   text-decoration: none;
   margin-bottom: 5px;
@@ -983,7 +978,7 @@ header {
   font-family: "Raleway", sans-serif;
 }
 
-#liens>*:hover {
+#liens > *:hover {
   color: black;
 }
 
@@ -1037,61 +1032,61 @@ header {
   }
 }
 
-
 /************************************************carroussel**************************************************************/
-#sectCarroussel{
+#sectCarroussel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 150vh;
-
 }
-#sectCarroussel:target { padding-top: 80px; margin-top: -80px; } 
+#sectCarroussel:target {
+  padding-top: 80px;
+  margin-top: -80px;
+}
 
-#carroussel{
+#carroussel {
   margin-top: 100px;
   width: 500px;
   max-width: 80%;
- 
+
   overflow: hidden;
   border: black 3px solid;
-  border-radius:5px;
+  border-radius: 5px;
   position: relative;
 }
 
-
-.corpsCarroussel{
+.corpsCarroussel {
   display: flex;
   width: 100%;
-  height: 500px; 
+  height: 500px;
 }
 
-.corpsCarroussel img{
+.corpsCarroussel img {
   height: 100%;
-  width:500px; 
+  width: 500px;
 }
 
-#gauche{
-position: absolute;
-top: 50%;
-z-index: 10;
-margin-left: 15px;
-color: white;
-font-size: 30px;
-cursor: pointer;
-opacity: 0.8;
+#gauche {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  margin-left: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-#droite{
-position: absolute;
-top: 50%;
-right: 0;
-z-index: 10;
-margin-right: 15px;
-color: white;
-font-size: 30px;
-cursor: pointer;
-opacity: 0.8;
+#droite {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+  margin-right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.8;
 }
