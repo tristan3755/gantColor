@@ -128,8 +128,6 @@ width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
  width: 80%;
- 
-
 }
 
 .catégorie1 h2 {
@@ -137,9 +135,7 @@ width: 100%;
   letter-spacing: 5px;
   font-size: 25px;
   text-transform: uppercase;
-  margin-bottom: 55px;
-  
-  
+  margin-bottom: 55px;  
 }
 
 .catégorie2 p {
@@ -200,18 +196,17 @@ width: 100%;
   align-items: center;
   font-family: "paint";
   align-self: center;
- 
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color: white;
-  width: 100%;
+  color: #e4d2c4;
+  width: 250px;
   height: 250px;
- 
   margin-bottom: 20px;
-  background-image: url(./ressources/images/traceRouge.png);
-  background-size: cover;
-  background-position: center;
+  margin-bottom: 150px;
+  border-radius: 50%;
+  border: solid 3px #e4d2c4;
+
 
 }
 
@@ -358,7 +353,7 @@ width: 100%;
 }
 
 /******************************************************sect3************************************************/
-
+/*
 #sect3 {
   display: flex;
   flex-direction: row;
@@ -381,14 +376,13 @@ width: 100%;
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color: white;
-  width: 100%;
+  color: #e4d2c4;
+  width: 250px;
   height: 250px;
   margin-bottom: 20px;
-  background-image: url(./ressources/images/traceRouge.png);
-  background-size: cover;
-  background-position: center;
   margin-bottom: 150px;
+  border-radius: 50%;
+  border: solid 3px #e4d2c4;
 
 }
 
@@ -477,7 +471,7 @@ width: 100%;
   background-position: center;
   background-size: cover;
 }
-
+*/
 /******************************************************formulaire************************************************/
 
 #sect4 {
@@ -500,14 +494,13 @@ width: 100%;
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color: white;
-  width: 100%;
+  color: #e4d2c4;
+  width: 250px;
   height: 250px;
   margin-bottom: 20px;
-  background-image: url(./ressources/images/jaune.jpg);
-  background-size: cover;
-  background-position: center;
   margin-bottom: 150px;
+  border-radius: 50%;
+  border: solid 3px #e4d2c4;
 }
 
 .contact {
@@ -682,16 +675,14 @@ textarea {
   align-items: center;
   font-family: "paint";
   align-self: center;
-  
   font-size: 15px;
   letter-spacing: 5px;
   text-align: center;
-  color:white;
-  width: 100%;
+  color:#e4d2c4;
+  width: 250px;
   height: 250px;
-  background-image: url(./ressources/images/traceOrange.png);
-  background-position: center;
-  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid #e4d2c4;
   margin-bottom: 120px;
 }
 
