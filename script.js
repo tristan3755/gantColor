@@ -1,3 +1,4 @@
+
 let exit = false;
 console.log(exit);
 
@@ -353,7 +354,7 @@ let counter = 0;
 
 const taille = imageSlider[0].clientWidth;
 
-slider.style.transform = "translateX(" + -taille * counter + "px)";
+slider.style.transform = "translateX(" + (-taille * counter) + "px)";
 
 suivant.addEventListener("click", (event) => {
   next();
@@ -367,15 +368,13 @@ function next() {
   if (counter >= imageSlider.length - 1) return;
   slider.style.transition = "transform 0.4s ease-in-out";
   counter++;
-  slider.style.transform = "translateX(" + -taille * counter + "px)";
+  slider.style.transform = "translateX(" + (-taille * counter) + "px)";
 }
 
 function preced() {
   if (counter <= 0) return;
   slider.style.transition = "transform 0.4s ease-in-out";
   counter--;
-  slider.style.transform = "translateX(" + -taille * counter + "px)";
+  slider.style.transform = "translateX(" + (-taille * counter) + "px)";
 }
 
-next();
-preced();
