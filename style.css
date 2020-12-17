@@ -1047,7 +1047,6 @@ header {
   margin-top: 100px;
   width: 500px;
   max-width: 80%;
-  
   overflow: hidden;
   border: black 3px solid;
   border-radius: 5px;
@@ -1056,16 +1055,15 @@ header {
 
 .corpsCarroussel {
   display: flex;
-  width: 100%;
+  width: 500px;
   height: 500px;
- 
-  
+   
 }
 
 .corpsCarroussel img {
   
   height: 100%;
-  width: 500px;
+  width: 100%;
 }
 
 #gauche {
@@ -1089,4 +1087,15 @@ header {
   font-size: 30px;
   cursor: pointer;
   opacity: 0.8;
+}
+
+
+@media (max-width: 600px) {
+
+#carroussel{
+  
+  width: 300px;
+  
+}
+
 }

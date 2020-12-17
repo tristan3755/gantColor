@@ -343,6 +343,7 @@ if (isSafari) {
 }
 
 /*******************************************************carroussel ********************************************************/
+document.addEventListener('DOMContentLoaded', function(){
 
 const slider = document.querySelector(".corpsCarroussel");
 const imageSlider = document.querySelectorAll(".corpsCarroussel img");
@@ -352,7 +353,8 @@ const suivant = document.getElementById("droite");
 
 let counter = 0;
 
-const taille = imageSlider[0].clientWidth;
+const taille = slider.clientWidth;
+console.log(taille)
 
 slider.style.transform = "translateX(" + (-taille * counter) + "px)";
 
@@ -377,4 +379,8 @@ function preced() {
   counter--;
   slider.style.transform = "translateX(" + (-taille * counter) + "px)";
 }
+
+});
+
+
 
