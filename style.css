@@ -1057,11 +1057,9 @@ header {
   display: flex;
   width: 500px;
   height: 500px;
-   
 }
 
 .corpsCarroussel img {
-  
   height: 100%;
   width: 100%;
 }
@@ -1093,9 +1091,9 @@ header {
 @media (max-width: 600px) {
 
 #carroussel{
-  
+
   width: 300px;
-  
+
 }
 
 }
